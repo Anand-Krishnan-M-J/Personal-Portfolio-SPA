@@ -74,7 +74,7 @@ export const Skills = () => {
         sx={
           {
             borderRadius: '1rem',
-            minHeight: "65vh",
+            minHeight: "45vh",
           }}>
         <Tabs
           className={classes.skill__tab}
@@ -104,22 +104,23 @@ export const Skills = () => {
         </Tabs>
         <Box className={classes.skills__content}
           sx={{
-            margin: 'auto', display: 'flex', padding: "1rem",
-            justifyContent: "space-evenly", flexWrap: 'wrap', flexDirection: 'row'
+            display: 'flex', padding: "1rem",
+            flexWrap: 'wrap', flexDirection: 'row', justifyContent: "center", gap: "3px",
           }}>
           {skills[value].items.map(item => <Box key={item.skillLabel}
             sx={{
-              width: item.width,
-              maxWidth: item.maxWidth,
-              margin: "auto 0.5rem",
-              padding: "0.5rem 0rem",
+              width: "100px",
+              padding: "0.5rem",
+              border: `solid 1px ${isDarkMode ? "#7979797d" : "#0000002e"}`
             }}>
             <Image
-              src={item.src} alt={item.skillLabel}
-              layout="responsive"
+              src={item.src}
+              alt={item.skillLabel}
+              width={150}
+              height={150}
               loading="eager"
             />
-
+            <Typography sx={{ textAlign: "center", fontSize: "0.8rem", fontWeight: 600 }}>{item.skillLabel}</Typography>
           </Box>)}
         </Box>
       </Box>

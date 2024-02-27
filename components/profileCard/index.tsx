@@ -1,6 +1,5 @@
 import { Box, Typography } from "@mui/material";
 
-import profile from "../../assets/images/d.png";
 import { useDarkMode } from "../../hooks/useDarkMode";
 
 import classes from "./ProfileCard.module.scss";
@@ -18,7 +17,7 @@ export const ProfileCard = () => {
     >
       <Box className={classes.profile__image}>
         <Box className={classes.profile__image}>
-          <img alt={profile.src} src={profile.src} />
+          <img alt="Profile" src={"/images/profile.png"} />
         </Box>
         <Box className={classes.caption}>
           <Typography sx={{ color: "#2753d7", fontWeight: 600 }}>

@@ -1,8 +1,31 @@
 .carousel .control-next.control-arrow:before {
-
-    border-left: solid 0.8rem #2753d7 !important;
+    border-left: solid 1.5rem #2753d7 !important;
 }
 
 .carousel .control-prev.control-arrow:before {
-    border-right: solid 0.8rem #2753d7 !important;
+    border-right: solid 1.5rem #2753d7 !important;
+}
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before  {
+    border-top: 1.5rem solid transparent !important;
+    border-bottom: 1.5rem solid transparent !important;
+}
+.carousel .carousel-status {
+    font-size: 1rem !important;
+    color: #2753d7 !important;
+}
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+    opacity: unset !important;
+}
+@media only screen and (max-width: 780px) {
+    .carousel .control-next.control-arrow:before {
+        border-left: solid 1rem #2753d7 !important;
+    }
+    
+    .carousel .control-prev.control-arrow:before {
+        border-right: solid 1rem #2753d7 !important;
+    }
+    .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before  {
+        border-top: 1rem solid transparent !important;
+        border-bottom: 1rem solid transparent !important;
+    }
 }

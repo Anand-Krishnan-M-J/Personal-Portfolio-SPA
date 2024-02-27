@@ -4,7 +4,6 @@ body {
     transition-timing-function: ease-in;
     transition: background-color 0.1s ease, color 0.1s ease;
     transition: background-image 0.1s ease, color 0.1s ease;
-
     background-color:none;
 }
 

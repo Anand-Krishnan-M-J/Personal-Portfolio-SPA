@@ -8,7 +8,6 @@ import Image from "next/image";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { Card } from "../../card";
 import { Background } from "../../background";
-import more from "../../../assets/images/5.png";
 
 import classes from "./blogs.module.scss";
 
@@ -119,22 +118,23 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
               alignItems: "center",
               justifyContent: "center",
               flexWrap: "wrap",
+              cursor: "grab",
+              userSelect: "none"
             }}
           >
             <Box
               sx={{
-                width: "350px",
                 maxWidth: "100%",
               }}
             >
               <Image
                 width={320}
                 height={300}
-                src={more}
-                alt={"view More"}
+                src="/images/more.png"
+                alt="view More"
               />
             </Box>
-            <Box sx={{ width: "350px", maxWidth: "100%" }}>
+            <Box sx={{ width: "450px", maxWidth: "100%", padding: "2rem" }}>
               <Typography sx={{ margin: "1rem", textAlign: "left" }}>
                 {viewMore}
               </Typography>

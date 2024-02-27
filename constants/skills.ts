@@ -1,133 +1,78 @@
-import js from "../assets/skills/js.png";
-import html from "../assets/skills/html.png";
-import css from "../assets/skills/css.png";
-import react from "../assets/skills/react.png";
-import next from "../assets/skills/next.png";
-import sass from "../assets/skills/sass.png";
-import mui from "../assets/skills/mui.png";
-import ts from "../assets/skills/ts.png";
-import sb from "../assets/skills/sb.png";
-import webpack from "../assets/skills/webpack.png";
-import babel from "../assets/skills/babel.png";
-import node from "../assets/skills/node.png";
-import express from "../assets/skills/express.png";
-import postgres from "../assets/skills/postgres.png";
-import docker from "../assets/skills/docker.png";
-import localstack from "../assets/skills/localstack.png";
-import sendgrid from "../assets/skills/sendgrid.png";
-import ga from "../assets/skills/ga.png";
-import firebase from "../assets/skills/firebase.png";
-import jest from "../assets/skills/jest.png";
-import rtl from "../assets/skills/rtl.png";
-import swagger from "../assets/skills/swagger.png";
-import postman from "../assets/skills/postman.png";
-import datadog from "../assets/skills/datadog.png";
-import git from "../assets/skills/git.png";
-import jira from "../assets/skills/jira.png";
-import confluence from "../assets/skills/confluence.png";
-import nginx from "../assets/skills/nginx.png";
-import jenkins from "../assets/skills/jenkins.png";
-
 const skills = [
   {
     tabLabel: "Frontend",
     items: [
       {
         skillLabel: "React.JS",
-        src: react,
-        width: "100px",
-        maxWidth: "22%",
+        src: "/skills/react.svg",
       },
       {
         skillLabel: "Next.JS",
-        src: next,
-        width: "100px",
-        maxWidth: "22%",
+        src: "/skills/next.svg",
       },
       {
-        skillLabel: "Sass",
-        src: sass,
-        width: "100px",
-        maxWidth: "25%",
-      },
-      {
-        skillLabel: "HTML",
-        src: html,
-        width: "65px",
-        maxWidth: "12%",
-      },
-      {
-        skillLabel: "CSS",
-        src: css,
-        width: "65px",
-        maxWidth: "12%",
-      },
-      {
-        skillLabel: "Javascript",
-        src: js,
-        width: "65px",
-        maxWidth: "12%",
-      },
-      {
-        skillLabel: "GA",
-        src: ga,
-        width: "180px",
-        maxWidth: "35%",
-      },
-      {
-        skillLabel: "Firebase",
-        src: firebase,
-        width: "200px",
-        maxWidth: "40%",
-      },
-      {
-        skillLabel: "Webpack",
-        src: webpack,
-        width: "250px",
-        maxWidth: "50%",
-      },
-      {
-        skillLabel: "datadog",
-        src: datadog,
-        width: "105px",
-        maxWidth: "20%",
-      },
-      {
-        skillLabel: "Material-UI",
-        src: mui,
-        width: "310px",
-        maxWidth: "55%",
-      },
-
-      {
-        skillLabel: "Babel",
-        src: babel,
-        width: "180px",
-        maxWidth: "25%",
+        skillLabel: "Redux",
+        src: "/skills/redux.svg",
       },
       {
         skillLabel: "Typescript",
-        src: ts,
-        width: "190px",
-        maxWidth: "40%",
+        src: "/skills/ts.svg",
       },
       {
-        skillLabel: "Storybook",
-        src: sb,
-        width: "220px",
-        maxWidth: "40%",
+        skillLabel: "Three.JS",
+        src: "/skills/three.svg",
       },
       {
         skillLabel: "Jest",
-        src: jest,
-        width: "120px",
-        maxWidth: "30%",
+        src: "/skills/jest.svg",
       },
       {
-        skillLabel: "RTL",
-        src: rtl,
-        width: "200px",
-        maxWidth: "35%",
+        skillLabel: "Testing Library",
+        src: "/skills/rtl.svg",
+      },
+      {
+        skillLabel: "Firebase",
+        src: "/skills/Firebase.svg",
+      },
+      {
+        skillLabel: "Webpack",
+        src: "/skills/webpack.svg",
+      },
+      {
+        skillLabel: "Babel",
+        src: "/skills/babel.svg",
+      },
+      {
+        skillLabel: "Storybook",
+        src: "/skills/storybook.svg",
+      },
+      {
+        skillLabel: "Sass",
+        src: "/skills/sass.svg",
+      },
+      {
+        skillLabel: "Material-UI",
+        src: "/skills/mui.svg",
+      },
+      {
+        skillLabel: "Google Analytics",
+        src: "/skills/GAnalytics.png",
+      },
+      {
+        skillLabel: "Datadog",
+        src: "/skills/datadog.png",
+      },
+      {
+        skillLabel: "HTML5",
+        src: "/skills/html5.svg",
+      },
+      {
+        skillLabel: "CSS3",
+        src: "/skills/css.svg",
+      },
+      {
+        skillLabel: "Javascript (ES6+)",
+        src: "/skills/js.svg",
       },
     ],
   },
@@ -135,52 +80,36 @@ const skills = [
     tabLabel: "Backend",
     items: [
       {
-        skillLabel: "node",
-        src: node,
-        width: "100px",
-        maxWidth: "30%",
+        skillLabel: "Node.JS",
+        src: "/skills/node.svg",
       },
       {
-        skillLabel: "express",
-        src: express,
-        width: "250px",
-        maxWidth: "50%",
+        skillLabel: "Express.JS",
+        src: "/skills/express.svg",
       },
       {
-        skillLabel: "swagger",
-        src: swagger,
-        width: "220px",
-        maxWidth: "45%",
+        skillLabel: "Swagger",
+        src: "/skills/swagger.png",
       },
       {
-        skillLabel: "postman",
-        src: postman,
-        width: "200px",
-        maxWidth: "40%",
+        skillLabel: "Postman",
+        src: "/skills/postman.svg",
       },
       {
-        skillLabel: "docker",
-        src: docker,
-        width: "230px",
-        maxWidth: "40%",
+        skillLabel: "Docker",
+        src: "/skills/docker.svg",
       },
       {
-        skillLabel: "localstack",
-        src: localstack,
-        width: "230px",
-        maxWidth: "50%",
+        skillLabel: "Sendgrid",
+        src: "/skills/sendgrid.png",
       },
       {
-        skillLabel: "sendgrid",
-        src: sendgrid,
-        width: "190px",
-        maxWidth: "45%",
+        skillLabel: "PostgreSQL",
+        src: "/skills/pg.svg",
       },
       {
-        skillLabel: "postgres",
-        src: postgres,
-        width: "120px",
-        maxWidth: "25%",
+        skillLabel: "Python",
+        src: "/skills/python.svg",
       },
     ],
   },
@@ -188,47 +117,55 @@ const skills = [
     tabLabel: "Others",
     items: [
       {
-        skillLabel: "Confluence",
-        src: confluence,
-        width: "300px",
-        maxWidth: "48%",
-      },
-      {
-        skillLabel: "Jira",
-        src: jira,
-        width: "150px",
-        maxWidth: "25%",
-      },
-      {
-        skillLabel: "Git",
-        src: git,
-        width: "110px",
-        maxWidth: "25%",
-      },
-      {
         skillLabel: "Nginx",
-        src: nginx,
-        width: "230px",
-        maxWidth: "50%",
+        src: "/skills/nginx.svg",
       },
       {
         skillLabel: "Jenkins",
-        src: jenkins,
-        width: "170px",
-        maxWidth: "40%",
+        src: "/skills/jenkins.svg",
+      },
+      {
+        skillLabel: "AWS",
+        src: "/skills/aws.svg",
+      },
+      {
+        skillLabel: "Git",
+        src: "/skills/git.png",
+      },
+      {
+        skillLabel: "Github Actions",
+        src: "/skills/githubActions.svg",
+      },
+      {
+        skillLabel: "Confluence",
+        src: "/skills/confluence.png",
+      },
+      {
+        skillLabel: "Jira",
+        src: "/skills/jira.png",
+      },
+      {
+        skillLabel: "Blender",
+        src: "/skills/blender.svg",
+      },
+      {
+        skillLabel: "Ubuntu",
+        src: "/skills/ubuntu.svg",
+      },
+      {
+        skillLabel: "Vercel",
+        src: "/skills/vercel.svg",
+      },
+      {
+        skillLabel: "Vite",
+        src: "/skills/vite.svg",
+      },
+      {
+        skillLabel: "VS Code",
+        src: "/skills/vscode.svg",
       },
     ],
   },
 ];
 
 export default skills;
-
-//other
-//git
-//jira
-//confluence
-//VS code
-//postman
-//Datadog
-//Akamai
-//

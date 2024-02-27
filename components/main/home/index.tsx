@@ -3,7 +3,6 @@ import Image from "next/image";
 import { Box, Button, Link, Typography } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 
-import intro from "../../../assets/images/4.png";
 import { homeMessages } from "../../../messages/home";
 import { DarKModeContext } from "../../layout/layout";
 import { resume } from "../../../constants";
@@ -16,7 +15,9 @@ export const Home = () => {
     <Box className={classes.intro__container}>
       <div className={classes.intro__image__container}>
         <Image
-          src={intro}
+          src={"/images/home.png"}
+          width={450}
+          height={450}
           alt="Photo of Anand, a full-stack web developer"
           priority
         />
