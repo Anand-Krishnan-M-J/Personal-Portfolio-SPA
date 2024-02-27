@@ -113,13 +113,24 @@ export const Skills = () => {
               padding: "0.5rem",
               border: `solid 1px ${isDarkMode ? "#7979797d" : "#0000002e"}`
             }}>
-            <Image
-              src={item.src}
-              alt={item.skillLabel}
-              width={150}
-              height={150}
-              loading="eager"
-            />
+            <div className={classes.skills__image__desk}>
+              <Image
+                src={item.src}
+                alt={item.skillLabel}
+                width={150}
+                height={150}
+                loading="eager"
+              />
+            </div>
+            <div className={classes.skills__image__mobile}>
+              <Image
+                src={item.mobileSrc}
+                alt={item.skillLabel}
+                width={80}
+                height={80}
+                loading="eager"
+              />
+            </div>
             <Typography sx={{ textAlign: "center", fontSize: "0.8rem", fontWeight: 600 }}>{item.skillLabel}</Typography>
           </Box>)}
         </Box>

@@ -12,6 +12,23 @@
         margin: auto;
     }
 
+    &__image {
+        &__desk {
+            display: none;
+
+            @media screen and (min-width:767px) {
+                display: block;
+            }
+        }
+
+        &__mobile {
+            @media screen and (min-width:767px) {
+                display: none;
+            }
+
+        }
+    }
+
     @media screen and (min-width:767px) {
         &__content {
             width: 100%;
@@ -44,6 +61,7 @@
         @include section__border;
         padding-bottom: 3rem;
         margin-bottom: 5rem;
+
         @media screen and (max-width:767px) {
             width: 100%;
             margin-bottom: 2rem;
