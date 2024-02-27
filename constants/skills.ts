@@ -55,7 +55,7 @@ const skills = [
       {
         skillLabel: "Storybook",
         src: "/skills/storybook.svg",
-        mobileSrc: "/skills/mobile/storybook.png",
+        mobileSrc: "/skills/mobile/storybook.svg",
       },
       {
         skillLabel: "Sass",
