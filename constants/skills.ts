@@ -43,6 +43,11 @@ const skills = [
         mobileSrc: "/skills/Firebase.svg",
       },
       {
+        skillLabel: "WebRTC",
+        src: "/skills/webrtc.svg",
+        mobileSrc: "/skills/webrtc.svg"
+      },
+      {
         skillLabel: "Webpack",
         src: "/skills/webpack.svg",
         mobileSrc: "/skills/mobile/webpack.svg",
@@ -66,11 +71,6 @@ const skills = [
         skillLabel: "Material-UI",
         src: "/skills/mui.svg",
         mobileSrc: "/skills/mui.svg",
-      },
-      {
-        skillLabel: "Google Analytics",
-        src: "/skills/GAnalytics.png",
-        mobileSrc: "/skills/GAnalytics.png",
       },
       {
         skillLabel: "Datadog",
@@ -166,6 +166,11 @@ const skills = [
         skillLabel: "Github Actions",
         src: "/skills/githubActions.svg",
         mobileSrc: "/skills/githubActions.svg",
+      },
+      {
+        skillLabel: "Google Analytics",
+        src: "/skills/GAnalytics.png",
+        mobileSrc: "/skills/GAnalytics.png",
       },
       {
         skillLabel: "Confluence",
