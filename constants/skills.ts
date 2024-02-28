@@ -45,7 +45,7 @@ const skills = [
       {
         skillLabel: "WebRTC",
         src: "/skills/webrtc.svg",
-        mobileSrc: "/skills/webrtc.svg"
+        mobileSrc: "/skills/webrtc.svg",
       },
       {
         skillLabel: "Webpack",
@@ -201,7 +201,7 @@ const skills = [
         skillLabel: "Vite",
         src: "/skills/vite.svg",
         mobileSrc: "/skills/vite.svg",
-      }
+      },
     ],
   },
 ];

@@ -39,7 +39,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
     <Box
       className={classes.blogs__container}
       sx={{
-        overflow:"hidden",
+        overflow: "hidden",
         /* eslint-disable */
         ...(isDarkMode && {
           border: "solid 1px #2f2f2fc4",
