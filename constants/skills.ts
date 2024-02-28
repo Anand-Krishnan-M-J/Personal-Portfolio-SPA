@@ -201,12 +201,7 @@ const skills = [
         skillLabel: "Vite",
         src: "/skills/vite.svg",
         mobileSrc: "/skills/vite.svg",
-      },
-      {
-        skillLabel: "VS Code",
-        src: "/skills/vscode.svg",
-        mobileSrc: "/skills/vscode.svg",
-      },
+      }
     ],
   },
 ];

@@ -39,6 +39,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
     <Box
       className={classes.blogs__container}
       sx={{
+        overflow:"hidden",
         /* eslint-disable */
         ...(isDarkMode && {
           border: "solid 1px #2f2f2fc4",
@@ -60,7 +61,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
             display: "flex",
             justifyContent: "center",
             color: isDarkMode ? "#696969" : "#353839aa",
-            fontWeight: 800,
+            fontWeight: 800
           }}
         >
           <Parallax
