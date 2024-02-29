@@ -18,7 +18,7 @@ export const Home = () => {
           src={"/images/home.png"}
           width={450}
           height={450}
-          alt="Photo of Anand, a full-stack web developer"
+          alt=""
           priority
         />
       </div>
