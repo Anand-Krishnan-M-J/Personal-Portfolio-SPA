@@ -558,7 +558,7 @@ export const About = () => {
           </Link>
           <Link
             sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
-            href="https://www.linkedin.com/in/anand-krishnan-mj-a6332b154/"
+            href="https://www.linkedin.com/in/anand-krishnan-mj"
             target="_blank"
           >
             <LinkedInIcon sx={{ fontSize: "2rem" }} />
