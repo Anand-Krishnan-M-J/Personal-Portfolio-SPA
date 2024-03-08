@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Box, Tab, Tabs, Typography } from "@mui/material";
 import { Parallax } from "react-scroll-parallax";
 
-import { joinClass } from "../../../helpers/utils";
+import { isMobileDevice, joinClass } from "../../../helpers/utils";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { Background } from "../../background";
 import skills from "../../../constants/skills";
@@ -40,8 +40,7 @@ export const Skills = () => {
       >
         <Parallax
           easing={"easeInOut"}
-          translateX={[-50, 1]}
-        >
+          {...isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
           <Typography
             sx={{
               fontSize: "large",
@@ -57,8 +56,7 @@ export const Skills = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Parallax
           easing="easeInOut"
-          translateX={[20, 0]}
-        >
+          {...isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 1] }}>
           <Typography
             className={classes.skills__title}
             sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}

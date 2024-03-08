@@ -20,11 +20,11 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
+import { isMobileDevice, joinClass } from "../../../helpers/utils";
 import { emailStateType, sendEmail } from "../../../store/email/reducer";
 import { RootState } from "../../../store/types";
 import { Loading } from "../../Loading";
 import { useDarkMode } from "../../../hooks/useDarkMode";
-import { joinClass } from "../../../helpers/utils";
 
 import classes from "./contact.module.scss";
 
@@ -164,8 +164,7 @@ export const Contact = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Parallax
             easing={"easeInOut"}
-            translateX={[-50, 1]}
-          >
+            {...isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
             <Typography
               sx={{
                 fontSize: "large",
@@ -180,8 +179,7 @@ export const Contact = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Parallax
             easing="easeInOut"
-            translateX={[20, 0]}
-          >
+            {...isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] }}> 
             <Typography
               className={classes.contact__title}
               sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}

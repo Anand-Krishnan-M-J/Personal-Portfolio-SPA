@@ -2,6 +2,7 @@ import { Box, Grid } from "@mui/material";
 import { Parallax } from "react-scroll-parallax";
 import { useInView } from "react-intersection-observer";
 
+import { isMobileDevice } from "../../../helpers/utils";
 import MiniLogo from "../../miniLogo";
 import { Background } from "../../background";
 
@@ -55,7 +56,13 @@ export const Quotes = () => {
           xs={5}
           sx={{ width: "100%", display: "flex", justifyContent: "center" }}
         >
-          <Parallax easing="easeInOut" translateX={[70, 0]}>
+          <Parallax
+            easing="easeInOut"
+            {...(isMobileDevice() && {
+              opacity: [0.5, 1],
+              translateX: [70, 0],
+            })}
+          >
             <MiniLogo />
           </Parallax>
         </Grid>

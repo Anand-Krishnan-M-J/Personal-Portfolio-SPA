@@ -22,6 +22,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Parallax } from "react-scroll-parallax";
 
+import { isMobileDevice } from "../../../helpers/utils";
 import { resume } from "../../../constants";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { homeMessages } from "../../../messages/home";
@@ -139,7 +140,9 @@ export const About = () => {
           fontWeight: "800",
         }}
       >
-        <Parallax easing="easeInOut" translateX={[-50, 1]}>
+        <Parallax
+          {...(isMobileDevice() && { opacity: [0, 1], translateX: [-50, 1] })}
+        >
           <Typography
             sx={{
               fontSize: "large",
@@ -155,7 +158,8 @@ export const About = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Parallax
           easing="easeInOut"
-          translateX={[20, 0]}>
+          {...(isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] })}
+        >
           <Typography
             className={classes.about__title}
             sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}
