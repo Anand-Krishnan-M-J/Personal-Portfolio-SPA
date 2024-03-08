@@ -17,14 +17,15 @@
             min-height:70vh;
         }
     }
-
+    
     &__quotes {
         @include sectionCommon();
         min-height:50vh;
     }
 
     &__skills {
-        @include sectionCommon();
+        display: flex;
+        justify-content: center;
     }
 
     &__contact {

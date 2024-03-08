@@ -79,14 +79,14 @@ const Main = () => {
                     sectionMapping={sectionMapping.portfolio}
                   />
                 </section>
-                <section ref={skillRef} className={classes["section__skills"]}>
-                  <Skills />
-                </section>
                 <section ref={aboutRef} className={classes["section__about"]}>
                   <About />
                 </section>
                 <section className={classes["section__quotes"]}>
                   <Quotes />
+                </section>
+                <section ref={skillRef} className={classes["section__skills"]}>
+                  <Skills />
                 </section>
                 <section
                   ref={contactRef}
