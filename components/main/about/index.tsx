@@ -225,8 +225,9 @@ export const About = () => {
                     left: 0,
                   },
                   margin: "1rem",
-                  borderLeft: `solid 1px ${isDarkMode ? "#696969" : "#353839aa"
-                    }`,
+                  borderLeft: `solid 1px ${
+                    isDarkMode ? "#696969" : "#353839aa"
+                  }`,
                 }}
               >
                 {experience.map((item, index) => (
@@ -431,8 +432,9 @@ export const About = () => {
                       left: 0,
                     },
                     margin: "1rem",
-                    borderLeft: `solid 1px ${isDarkMode ? "#696969" : "#353839aa"
-                      }`,
+                    borderLeft: `solid 1px ${
+                      isDarkMode ? "#696969" : "#353839aa"
+                    }`,
                   }}
                 >
                   {education.map((item, index) => (
