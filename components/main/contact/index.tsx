@@ -165,7 +165,7 @@ export const Contact = () => {
           <Parallax
             easing={"easeInOut"}
             opacity={[0.3, 1]}
-            translateX={["-50%", "1%"]}
+            translateX={[-50, 1]}
           >
             <Typography
               sx={{
@@ -182,7 +182,7 @@ export const Contact = () => {
           <Parallax
             easing="easeInOut"
             opacity={[0.5, 1]}
-            translateX={["20%", "0%"]}
+            translateX={[20, 0]}
           >
             <Typography
               className={classes.contact__title}

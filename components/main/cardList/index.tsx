@@ -67,7 +67,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
           <Parallax
             easing="easeInOut"
             opacity={[0.5, 1]}
-            translateX={["-50%", "1%"]}
+            translateX={[-50, 1]}
           >
             <Typography
               sx={{
@@ -82,7 +82,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
           <Parallax
             easing="easeInOut"
             opacity={[0.5, 1]}
-            translateX={["20%", "0%"]}
+            translateX={[20, 0]}
           >
             <Typography
               className={classes.blogs__title}
