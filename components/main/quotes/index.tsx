@@ -58,7 +58,7 @@ export const Quotes = () => {
         >
           <Parallax
             easing="easeInOut"
-            {...(isMobileDevice() && {
+            {...(!isMobileDevice() && {
               opacity: [0.5, 1],
               translateX: [70, 0],
             })}

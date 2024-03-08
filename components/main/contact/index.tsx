@@ -164,7 +164,7 @@ export const Contact = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Parallax
             easing={"easeInOut"}
-            {...isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
+            {...!isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
             <Typography
               sx={{
                 fontSize: "large",
@@ -179,7 +179,7 @@ export const Contact = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Parallax
             easing="easeInOut"
-            {...isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] }}> 
+            {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] }}> 
             <Typography
               className={classes.contact__title}
               sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}

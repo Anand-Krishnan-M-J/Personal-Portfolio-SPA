@@ -67,7 +67,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
         >
           <Parallax
             easing="easeInOut"
-            {...isMobileDevice() && { opacity: [0.5, 1], translateX: [-50, 1] }}>
+            {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [-50, 1] }}>
             <Typography
               sx={{
                 fontSize: "large",
@@ -80,7 +80,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
         <Box component="span" sx={{ margin: "auto" }}>
           <Parallax
             easing="easeInOut"
-            {...isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 1] }}>
+            {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 1] }}>
             <Typography
               className={classes.blogs__title}
               sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}

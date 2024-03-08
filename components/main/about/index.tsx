@@ -141,7 +141,7 @@ export const About = () => {
         }}
       >
         <Parallax
-          {...(isMobileDevice() && { opacity: [0, 1], translateX: [-50, 1] })}
+          {...(!isMobileDevice() && { opacity: [0, 1], translateX: [-50, 1] })}
         >
           <Typography
             sx={{
@@ -158,7 +158,7 @@ export const About = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Parallax
           easing="easeInOut"
-          {...(isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] })}
+          {...(!isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] })}
         >
           <Typography
             className={classes.about__title}

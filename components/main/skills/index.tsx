@@ -40,7 +40,7 @@ export const Skills = () => {
       >
         <Parallax
           easing={"easeInOut"}
-          {...isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
+          {...!isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
           <Typography
             sx={{
               fontSize: "large",
@@ -56,7 +56,7 @@ export const Skills = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Parallax
           easing="easeInOut"
-          {...isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 1] }}>
+          {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 1] }}>
           <Typography
             className={classes.skills__title}
             sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}
