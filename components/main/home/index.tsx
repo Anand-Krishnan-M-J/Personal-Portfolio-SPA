@@ -56,7 +56,8 @@ export const Home = () => {
         <Box className={classes.intro__button__container}>
           <Link
             sx={{
-              color: isDarkMode ? "white" : "black", textDecoration:"none"
+              color: isDarkMode ? "white" : "black",
+              textDecoration: "none",
             }}
             href={resume}
             target="_blank"
@@ -64,7 +65,7 @@ export const Home = () => {
             <Button
               variant="outlined"
               sx={{
-                textDecoration:"none",
+                textDecoration: "none",
                 marginTop: "1rem",
                 border: `solid 1px ${isDarkMode ? "#4e4e4e" : "#00000059"}`,
                 color: isDarkMode ? "#a5a5a5" : "#313131",

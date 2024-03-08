@@ -95,7 +95,6 @@ export const RotaryMenu = () => {
       setRotateByAngle(0);
     }
   }, [isComponentVisible]);
-
   return (
     <div
       className={
@@ -109,12 +108,15 @@ export const RotaryMenu = () => {
         height: rotorSize * 2,
         display: "flex",
         justifyContent: "center",
+        touchAction: "manipulation",
       }}
     >
       <Box
         style={{
           transform: `rotate(${rotatebyAngle}deg)`,
+          WebkitTransform: `rotate(${rotatebyAngle}deg)`, // Vendor prefix for Safari
           transition: "transform 1s ease",
+          WebkitTransition: "-webkit-transform 1s ease", // Vendor prefix for Safari
         }}
         ref={ref}
         className={
@@ -154,6 +156,7 @@ export const RotaryMenu = () => {
                     bottom: `${item.yCordinate - yOffset}px`,
                     left: `${item.xCordinate - xOffset}px`,
                     transform: `rotate(${180 - rotatebyAngle}deg)`,
+                    WebkitTransform: `rotate(${180 - rotatebyAngle}deg)`,
                     borderRadius: "50%",
                     width: "3rem",
                     transition: "width 1s transform 1s ease",
