@@ -35,3 +35,8 @@ html {
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
 }
+
+.parallax-element {
+    will-change: transform;
+  }
+  

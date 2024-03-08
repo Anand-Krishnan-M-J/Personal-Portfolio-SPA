@@ -55,7 +55,7 @@ export const Quotes = () => {
           xs={5}
           sx={{ width: "100%", display: "flex", justifyContent: "center" }}
         >
-          <Parallax easing={"easeInOut"} translateX={["-70%", "0%"]}>
+          <Parallax easing="easeInOut" translateX={[70, 0]}>
             <MiniLogo />
           </Parallax>
         </Grid>

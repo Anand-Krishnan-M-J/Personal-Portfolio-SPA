@@ -139,7 +139,7 @@ export const About = () => {
           fontWeight: "800",
         }}
       >
-        <Parallax opacity={[0, 1]} translateX={["-50%", "1%"]}>
+        <Parallax easing="easeInOut" translateX={[-50, 1]}>
           <Typography
             sx={{
               fontSize: "large",
@@ -155,9 +155,7 @@ export const About = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Parallax
           easing="easeInOut"
-          opacity={[0.5, 1]}
-          translateX={["20%", "0%"]}
-        >
+          translateX={[20, 0]}>
           <Typography
             className={classes.about__title}
             sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}
@@ -223,9 +221,8 @@ export const About = () => {
                     left: 0,
                   },
                   margin: "1rem",
-                  borderLeft: `solid 1px ${
-                    isDarkMode ? "#696969" : "#353839aa"
-                  }`,
+                  borderLeft: `solid 1px ${isDarkMode ? "#696969" : "#353839aa"
+                    }`,
                 }}
               >
                 {experience.map((item, index) => (
@@ -430,9 +427,8 @@ export const About = () => {
                       left: 0,
                     },
                     margin: "1rem",
-                    borderLeft: `solid 1px ${
-                      isDarkMode ? "#696969" : "#353839aa"
-                    }`,
+                    borderLeft: `solid 1px ${isDarkMode ? "#696969" : "#353839aa"
+                      }`,
                   }}
                 >
                   {education.map((item, index) => (

@@ -40,8 +40,7 @@ export const Skills = () => {
       >
         <Parallax
           easing={"easeInOut"}
-          opacity={[0.3, 1]}
-          translateX={["-50%", "1%"]}
+          translateX={[-50, 1]}
         >
           <Typography
             sx={{
@@ -58,8 +57,7 @@ export const Skills = () => {
       <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Parallax
           easing="easeInOut"
-          opacity={[0.5, 1]}
-          translateX={["20%", "0%"]}
+          translateX={[20, 0]}
         >
           <Typography
             className={classes.skills__title}
