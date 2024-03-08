@@ -4,7 +4,7 @@ body {
     transition-timing-function: ease-in;
     transition: background-color 0.1s ease, color 0.1s ease;
     transition: background-image 0.1s ease, color 0.1s ease;
-    background-color:none;
+    background-color: none;
 }
 
 ::-webkit-scrollbar {
@@ -13,6 +13,8 @@ body {
 
 .control-arrow {
     opacity: unset;
+    -webkit-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
 }
 
 .carousel.carousel-slider .control-arrow:hover {
@@ -38,5 +40,4 @@ html {
 
 .parallax-element {
     will-change: transform;
-  }
-  
+}

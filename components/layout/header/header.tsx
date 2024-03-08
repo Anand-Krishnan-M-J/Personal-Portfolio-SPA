@@ -43,14 +43,14 @@ function Header({ onDarkModeToggle }: HeaderProps) {
         IconComponent: <BusinessCenterIcon sx={iconStyle} />,
       },
       {
-        name: "Skills",
-        href: "/skills",
-        IconComponent: <PsychologyIcon sx={iconStyle} />,
-      },
-      {
         name: "About",
         href: "/about",
         IconComponent: <PersonIcon sx={iconStyle} />,
+      },
+      {
+        name: "Skills",
+        href: "/skills",
+        IconComponent: <PsychologyIcon sx={iconStyle} />,
       },
       {
         name: "Contact",

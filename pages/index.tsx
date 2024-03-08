@@ -21,7 +21,7 @@ import classes from "./index.module.scss";
 export const TabContext = React.createContext({
   tabValue: 0,
   /* eslint-disable */
-  handleTabChange: (event: React.SyntheticEvent, newValue: number) => {},
+  handleTabChange: (event: React.SyntheticEvent, newValue: number) => { },
 });
 
 const Main = () => {
@@ -37,8 +37,8 @@ const Main = () => {
     0: homeRef,
     1: portfolioRef,
     // 2: blogRef,
-    2: skillRef,
-    3: aboutRef,
+    2: aboutRef,
+    3: skillRef,
     4: contactRef,
   };
   const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {

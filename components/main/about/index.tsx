@@ -516,46 +516,69 @@ export const About = () => {
               Education
             </Typography>
             {education.map((item, index) => (
-              <Box
-                key={`eduMobTab-${index}`}
+              <Accordion
+                key={`edu-${index}`}
                 sx={{
+                  backgroundColor: isDarkMode ? "#29292930" : "#a1cdff1c",
                   boxShadow: "0rem 0rem 0.1rem grey",
-                  padding: "0.5rem",
-                  margin: "1rem 0rem",
-                  paddingBottom: "2rem",
+                  color: isDarkMode ? "#a1a1a1" : "",
                 }}
               >
-                <Typography
-                  sx={{
-                    marginTop: "1rem",
-                    marginBottom: "1rem",
-                    fontWeight: "600",
-                    fontSize: "1.4rem",
-                  }}
+                <AccordionSummary
+                  expandIcon={
+                    <ExpandMoreIcon
+                      sx={{
+                        color: isDarkMode ? "#a1a1a1" : "",
+                        display: "flex",
+                        flexDirection: "column",
+                      }}
+                    />
+                  }
+                  aria-controls="panel1a-content"
+                  id="panel1a-header"
+                  sx={{ color: "inherit" }}
                 >
-                  {item.institute}
-                </Typography>
-                <Box sx={{ display: "flex", justifyContent: "space-between" }}>
-                  <Typography
+                  <Box
                     sx={{
-                      fontWeight: "600",
-                      fontSize: "1rem",
+                      display: "flex",
+                      flexDirection: "column",
+                      width: "100%",
                     }}
                   >
-                    {item.designation}
-                  </Typography>
-                  <Typography sx={{ margin: "0.2rem 0.1rem 1rem 0.5rem" }}>
-                    {`${item.startDate} - ${item.endDate}`}
-                  </Typography>
-                </Box>
-
-                <Typography>{item.organization}</Typography>
-                {item.cgpa && (
-                  <Typography sx={{ minWidth: "6rem" }}>
-                    CGPA: {item.cgpa}
-                  </Typography>
-                )}
-              </Box>
+                    <Typography
+                      sx={{
+                        fontWeight: "600",
+                        fontSize: "1.2rem",
+                      }}
+                    >
+                      {`${item.designation}`}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        fontWeight: "500",
+                        fontSize: "0.9rem",
+                        color: isDarkMode ? "#a1a1a1" : "#353839aa",
+                      }}
+                    >
+                      {item.institute} ({item?.startDate} - {item?.endDate})
+                    </Typography>
+                  </Box>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>{item.organization}</Typography>
+                  {item.cgpa && (
+                    <Typography
+                      sx={{
+                        fontSize: "0.8rem",
+                        minWidth: "6rem",
+                        color: isDarkMode ? "#a1a1a1" : "#353839aa",
+                      }}
+                    >
+                      CGPA: {item.cgpa}
+                    </Typography>
+                  )}
+                </AccordionDetails>
+              </Accordion>
             ))}
           </Box>
         </Box>
