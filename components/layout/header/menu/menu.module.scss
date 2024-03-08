@@ -38,18 +38,39 @@ $animation-duration: 0.4s;
     }
 }
 
+@keyframes bounce {
+    20%, 53%, 80%, 0%, 100% {
+        animation-timing-function: cubic-bezier(0.215,.61,.355,1);
+        transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+        animation-timing-function: cubic-bezier(0.755,.050,.855,.060);
+        transform: translate3d(0,-30px,0);
+    }
+    70% {
+        animation-timing-function: cubic-bezier(0.755,.050,.855,.060);
+        transform: translate3d(0,-15px,0);
+    }
+    90% {
+        transform: translate3d(0,-4px,0);
+    }
+}
+
 .bounce {
     -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
 }
 
 .mainContainer {
     &--open {
         bottom: 10%;
+        -webkit-transition: all $animation-duration ease;
         transition: all $animation-duration ease;
     }
 
     &--close {
         bottom: -3.2rem;
+        -webkit-transition: all $animation-duration ease;
         transition: all $animation-duration ease;
     }
 }
@@ -70,16 +91,19 @@ $animation-duration: 0.4s;
         right: 0;
         height: $menu-size;
         width: $menu-size;
+        -webkit-animation: rotorIconOpen $animation-duration forwards ease;
         animation: rotorIconOpen $animation-duration forwards ease;
     }
 
     &__icons {
+        -webkit-animation: fadeInFromNone $animation-duration forwards ease;
         animation: fadeInFromNone $animation-duration forwards ease;
     }
 
     &--open {
         @include positionAndZ;
 
+        -webkit-animation: open 0.1s forwards ease;
         animation: open 0.1s forwards ease;
     }
 
@@ -105,28 +129,39 @@ $animation-duration: 0.4s;
     }
 }
 
-@keyframes rotorIconOpen {
+@-webkit-keyframes rotorIconOpen {
     0% {
-        transform: rotate(135deg)
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
     }
 
     100% {
-        transform: rotate(180deg)
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotorIconOpen {
+    0% {
+        transform: rotate(135deg);
     }
 
+    100% {
+        transform: rotate(180deg);
+    }
 }
 
 @keyframes fadeInFromNone {
     0% {
         display: block;
         opacity: 0;
-        left: 51px
+        left: 51px;
     }
 
     20% {
         display: block;
         opacity: 0;
-        left: 51px
+        left: 51px;
     }
 
     40% {
