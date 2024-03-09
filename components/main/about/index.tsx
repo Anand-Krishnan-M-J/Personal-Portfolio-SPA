@@ -40,8 +40,8 @@ const experience = [
     designation: "Senior Software Engineer",
     worksDone: [
       "Led multiple successful project initiatives by translating client requirements into comprehensive technical specifications.",
+      "Contributing significantly to the core frontend team of a multinational fashion retail giant in Japan. Played a crucial role in developing a user-friendly website for over 40 million active users. Introduced new features, fixed numerous bugs, handled several technical debts, and managed smooth releases.",
       "Managed and mentored a team of junior developers from Japan and India to ensure timely and successful project deliveries.",
-      "Contributed significantly to the core frontend team of a multinational fashion retail giant in Japan. Played a crucial role in developing a user-friendly website for over 40 million active users. Introduced new features, fixed numerous bugs, handled several technical debts, and managed smooth releases.",
     ],
   },
   {
