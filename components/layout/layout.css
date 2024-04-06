@@ -5,6 +5,7 @@ body {
     transition: background-color 0.1s ease, color 0.1s ease;
     transition: background-image 0.1s ease, color 0.1s ease;
     background-color: none;
+    font-size: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -21,15 +22,13 @@ body {
     background: none !important;
 }
 
-body {}
-
 ::-webkit-scrollbar-thumb {
     display: none;
 }
 
 body.dark-mode {
     background-color: #111;
-    color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
     background-image: none;
 }
 

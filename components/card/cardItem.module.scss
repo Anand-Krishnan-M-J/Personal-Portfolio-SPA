@@ -1,105 +1,168 @@
-  .card {
-    &__container{
-    }:hover{
-      cursor: grab;
+.card {
+  &__container {
+    padding: 2rem;
+    margin: 2rem;
+    @media only screen and (max-width: 780px) {
+      padding: 0rem;
+      margin: 0rem;
     }
-    &__image--desk {
-      border-radius: 12px;
-      width: 350px;
-      max-width: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column !important;
-      justify-content: flex-start;
+  }
+  &__container:hover {
+    cursor: grab;
+    background-color: rgba(136, 136, 136, 0.062);
+    transition: 0.8s ease-in-out;
+  }
+
+  &__image--desk {
+    border-radius: 12px;
+    width: 350px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start;
+  }
+  &__image {
+    border-radius: 1rem;
+  }
+}
+
+.card {
+  &__tech {
+    @media only screen and (max-width: 780px) {
+      display: none;
     }
-    &__image{
-      border-radius: 1rem;
+  }
+}
+
+.card {
+  &__image--mob {
+    display: none;
+  }
+}
+
+.card {
+  margin: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0s;
+
+  &__container {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .scrollRight {
+    display: none !important;
+  }
+
+  .description {
+    display: block;
+    max-height: 400px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+  }
+
+  .card-container {
+    .card {
+      width: 100vw;
+      height: 150px;
+      animation: hvr 5s infinite ease-in-out;
+      transition: none;
     }
   }
 
   .card {
     &__tech {
-      @media only screen and (max-width: 780px) {
-        display: none;
-      }
-
-    }
-  }
-
-  .card {
-    &__image--mob {
       display: none;
     }
   }
 
   .card {
-    margin: 1rem;
-    overflow: hidden;
-    border-radius: 10px;
-    transition: all 0s;
-
-    &__container {
-      border-radius: 10px;
+    &__image--mob {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
     }
   }
 
-  @media only screen and (max-width: 780px) {
-    .scrollRight {
-      display: none !important;
+  @keyframes hvr {
+    0% {
+      box-shadow:
+        -2px 2px 0px 0px #202020,
+        -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+      transform: translate(0px, 0px);
     }
 
-    .description {
-      display: block;
-      max-height: 400px;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: pre-wrap;
-      display: -webkit-box;
-      -webkit-box-orient: vertical;
-      -webkit-line-clamp: 4;
+    50% {
+      transform: translate(0px, -20px);
+      box-shadow:
+        -2px 1px 0px 0px #202020,
+        -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .card-container {
-      .card {
-        width: 100vw;
-        height: 150px;
-        animation: hvr 5s infinite ease-in-out;
-        transition: none;
-      }
-    }
-
-    .card {
-      &__tech {
-        display: none;
-      }
-    }
-
-    .card {
-      &__image--mob {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-      }
-    }
-
-    @keyframes hvr {
-      0% {
-        box-shadow: -2px 2px 0px 0px #202020,
-          -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
-        transform: translate(0px, 0px);
-      }
-
-      50% {
-        transform: translate(0px, -20px);
-        box-shadow: -2px 1px 0px 0px #202020,
-          -40px 40px 40px 0 rgba(0, 0, 0, 0.2);
-      }
-
-      100% {
-        box-shadow: -2px 2px 0px 0px #202020,
-          -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
-        transform: translate(0px, 0px);
-      }
+    100% {
+      box-shadow:
+        -2px 2px 0px 0px #202020,
+        -10px 10px 40px 0px rgba(0, 0, 0, 0.3);
+      transform: translate(0px, 0px);
     }
   }
+}
+
+/* Shine */
+.card__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.card__container::before {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: 2;
+  display: block;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 100%
+  );
+  -webkit-transform: skewX(-25deg);
+  transform: skewX(-25deg);
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+}
+.card__container:hover::before {
+  -webkit-animation: shine 1.5s;
+  animation: shine 1.5s;
+  transition: ease-in-out all;
+  @media only screen and (max-width: 992px) {
+    animation: none;
+  }
+}
+@-webkit-keyframes shine {
+  100% {
+    left: 100%;
+  }
+}
+@keyframes shine {
+  100% {
+    left: 100%;
+  }
+}

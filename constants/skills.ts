@@ -132,11 +132,11 @@ const skills = [
         src: "/skills/pg.svg",
         mobileSrc: "/skills/pg.svg",
       },
-      {
-        skillLabel: "Python",
-        src: "/skills/python.svg",
-        mobileSrc: "/skills/python.svg",
-      },
+      // {
+      //   skillLabel: "Python",
+      //   src: "/skills/python.svg",
+      //   mobileSrc: "/skills/python.svg",
+      // },
     ],
   },
   {

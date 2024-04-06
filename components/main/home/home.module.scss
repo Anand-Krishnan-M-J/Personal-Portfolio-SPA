@@ -1,4 +1,4 @@
-@use '../../../styles/theme.module.scss' as *;
+@use "../../../styles/theme.module.scss" as *;
 $darkBg: rgba(21, 21, 21);
 $lightBg: #add3ff;
 $caret-color-dark: b6d8ff;
@@ -6,333 +6,334 @@ $caret-color-light: rgb(0, 0, 0);
 $text-length: 23;
 $animation-time: 1.3s;
 
+@mixin animateLinks {
+  animation: fadeInProfession 1s ease forwards;
+  animation-delay: 1.6s;
+}
+
 @mixin animateDescription {
-    animation: fadeInProfession 1s ease forwards;
-    animation-delay: 1.3s;
+  animation: fadeInProfession 1s ease forwards;
+  animation-delay: 1.3s;
 }
 
 @mixin animateProfession {
-    animation: fadeInProfession 1s ease forwards;
-    animation-delay: 1s;
+  animation: fadeInProfession 1s ease forwards;
+  animation-delay: 1s;
 }
 
 @mixin animateCvButton {
-    animation: fadeInProfession 1s ease forwards;
-    animation-delay: 1.6s;
+  animation: fadeInProfession 1s ease forwards;
+  animation-delay: 1.6s;
 }
 
 @mixin animateImage {
-    animation: fadeInRightImage 1s ease forwards;
+  animation: fadeInRightImage 1s ease forwards;
 }
 
 @mixin fadeInSeperation {
-    animation: fadeInSeperation 4s ease;
+  animation: fadeInSeperation 4s ease;
 }
 
 @keyframes zoom {
-    from {
-        opacity: 0;
+  from {
+    opacity: 0;
 
-        transform: scale(0);
-    }
+    transform: scale(0);
+  }
 
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInRightImage {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInProfession {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeInSeperation {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @mixin commonSelf {
-    font-size: 2rem;
-    margin: 0;
-    width: max-content;
-    position: relative;
+  font-size: 2rem;
+  margin: 0;
+  width: max-content;
+  position: relative;
 
-    &::after {
-        content: "|";
-        position: absolute;
-        right: 0;
-        width: 100%;
-        color: $caret-color-dark;
-        background: $darkBg;
-        animation: typing $animation-time steps($text-length) forwards,
-            caret 1s infinite;
-    }
+  &::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    width: 100%;
+    color: $caret-color-dark;
+    background: $darkBg;
+    animation:
+      typing $animation-time steps($text-length) forwards,
+      caret 1s infinite;
+  }
 }
 
 .intro {
-    &__content {
-        margin-top: 1.5rem;
-        padding: 1rem;
+  &__content {
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__container {
+    min-height: 80vh;
+    width: 85%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include section__border;
+
+    @media screen and (max-width: 767px) {
+      min-height: 100vh;
+      justify-content: center;
+    }
+  }
+
+  &__image__container {
+    width: 500px;
+
+    @media screen and (max-width: 767px) {
+      width: 400px;
     }
 
+    @include animateImage;
+  }
+
+  &__self {
+    &--dark {
+      @include commonSelf();
+    }
+
+    &--light {
+      @include commonSelf();
+
+      &::after {
+        background: $lightBg;
+        color: $caret-color-light;
+      }
+    }
+  }
+
+  // Animation
+  @keyframes typing {
+    to {
+      width: 0;
+    }
+  }
+
+  @keyframes caret {
+    50% {
+      color: transparent;
+    }
+  }
+
+  &__content {
+    max-width: 780px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__profession {
+    text-transform: uppercase;
+    margin: 1rem;
+    color: #2753d7;
+    font-size: 3.5rem;
+    @include animateProfession;
+  }
+
+  &__horizontalSeparation {
+    border-left: solid 2px rgb(80, 77, 77);
+    height: 100%;
+    @include fadeInSeperation;
+  }
+
+  &__description {
+    font-weight: 500;
+    max-width: 670px;
+    width: 90%;
+    line-height: 1.6;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    opacity: 0;
+    @include animateDescription;
+  }
+  &__links {
+    opacity: 0;
+    @include animateLinks;
+  }
+
+  &__button__container {
+    max-width: 670px;
+    opacity: 0;
+    @include animateCvButton;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
     &__container {
-        min-height: 80vh;
-        width: 85%;
-        max-width: 1400px;
-        margin: auto;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: row;
-        border-radius: 0.5rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        @include section__border;
-
-        @media screen and (max-width:767px) {
-            height: 100vh;
-            justify-content: center;
-        }
-    }
-
-    &__image__container {
-        width: 500px;
-
-        @media screen and (max-width:767px) {
-            width: 400px;
-        }
-
-        @include animateImage;
+      flex-direction: column;
     }
 
     &__self {
-        &--dark {
-            @include commonSelf();
-        }
-
-        &--light {
-            @include commonSelf();
-
-            &::after {
-                background: $lightBg;
-                color: $caret-color-light;
-            }
-        }
-
-    }
-
-    // Animation
-    @keyframes typing {
-        to {
-            width: 0
-        }
-    }
-
-    @keyframes caret {
-        50% {
-            color: transparent
-        }
-    }
-
-    &__content {
-        max-width: 780px;
-        width: 90%;
-        display: flex;
-        flex-direction: column;
+      font-size: 2rem;
     }
 
     &__profession {
-        text-transform: uppercase;
-        margin: 1rem;
-        color: #2753d7;
-        font-size: 3.5rem;
-        @include animateProfession;
+      font-size: 2rem;
     }
 
-    &__horizontalSeparation {
-        border-left: solid 2px rgb(80, 77, 77);
-        height: 100%;
-        @include fadeInSeperation;
+    &__image__container {
+      width: 70%;
     }
+  }
 
-    &__description {
-        font-weight: 500;
-        font-size: 1.05rem;
-        max-width: 670px;
-        width: 90%;
-        line-height: 1.6;
-        margin-top: 1rem;
-        padding-top: 1rem;
-        opacity: 0;
-        @include animateDescription;
-    }
-
-    &__button__container {
-        max-width: 670px;
-        opacity: 0;
-        @include animateCvButton;
-    }
+  .intro__container {
+    background-color: #00000000;
+    box-shadow: none;
+    width: 100%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
-
-@media only screen and (max-width:768px) {
-    .intro {
-        &__container {
-            flex-direction: column;
-        }
-
-        &__self {
-            font-size: 2rem;
-        }
-
-        &__profession {
-            font-size: 2rem;
-        }
-
-        &__image__container {
-            width: 70%;
-        }
-    }
-
-    .intro__container {
-        background-color: #00000000;
-        box-shadow: none;
-        width: 100%;
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-}
-
-
 
 .slider__wrapper {
-    font-size: 2.5rem;
-    color: #2753d7;
-    font-weight: bold;
-    text-transform: uppercase;
-    opacity: 0;
-    margin-top: 1rem;
-    @include animateProfession;
+  font-size: 2.5rem;
+  color: #2753d7;
+  font-weight: bold;
+  opacity: 0;
+  margin-top: 1rem;
+  @include animateProfession;
 }
 
 .slider {
-    height: 3rem;
-    overflow: hidden;
+  height: 3rem;
+  overflow: hidden;
 
-    @media screen and (max-width:1200px) {
-        height: 2rem;
+  @media screen and (max-width: 1200px) {
+    height: 2rem;
     font-size: 1.5rem;
-
-    }
+  }
 }
 
 .slider__text1 {
-    font-size: inherit;
-    animation: slide 10s linear infinite;
-    animation-delay: 3s;
-    height: 3rem;
-    margin: 0;
+  font-size: inherit;
+  animation: slide 10s linear infinite;
+  animation-delay: 3s;
+  height: 3rem;
+  margin: 0;
 }
 
 .slider__text2 {
-    font-size: inherit;
-    height: 3rem;
-    margin: 0;
+  font-size: inherit;
+  height: 3rem;
+  margin: 0;
 }
 
 .slider__text3 {
-    font-size: inherit;
-    height: 3rem;
-    margin: 0;
+  font-size: inherit;
+  height: 3rem;
+  margin: 0;
 }
 
 @keyframes slide {
-    0% {
-        margin-top: 0rem;
-    }
+  0% {
+    margin-top: 0rem;
+  }
 
-    10% {
-        margin-top: 0rem;
-    }
+  10% {
+    margin-top: 0rem;
+  }
 
-    20% {
-        margin-top: -3rem;
-    }
+  20% {
+    margin-top: -3rem;
+  }
 
-    30% {
-        margin-top: -3rem;
-    }
+  30% {
+    margin-top: -3rem;
+  }
 
-    40% {
-        margin-top: -3rem;
-    }
+  40% {
+    margin-top: -3rem;
+  }
 
-    50% {
-        margin-top: -6rem;
-    }
+  50% {
+    margin-top: -6rem;
+  }
 
-    60% {
-        margin-top: -6rem;
-    }
+  60% {
+    margin-top: -6rem;
+  }
 
+  70% {
+    margin-top: -3rem;
+  }
 
-    70% {
-        margin-top: -3rem;
-    }
+  80% {
+    margin-top: -3rem;
+  }
 
-    80% {
-        margin-top: -3rem;
-    }
+  90% {
+    margin-top: -3rem;
+  }
 
-    90% {
-        margin-top: -3rem;
-    }
-
-    100% {
-        margin-top: 0rem;
-    }
+  100% {
+    margin-top: 0rem;
+  }
 }
 
-@media screen and (max-width:992px) {
-    .slider__wrapper {
-        font-size: 1.5rem;
-        display: flex;
-        align-items: center;
+@media screen and (max-width: 992px) {
+  .slider__wrapper {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .intro__self {
+    &--dark {
+      font-size: 1.5rem;
     }
 
-    .intro__self {
-        &--dark {
-            font-size: 1.5rem;
-        }
-
-        &--light {
-            font-size: 1.5rem;
-        }
+    &--light {
+      font-size: 1.5rem;
     }
-
+  }
 }
 
 .main__image {
-    max-width: 400px;
+  max-width: 400px;
 }

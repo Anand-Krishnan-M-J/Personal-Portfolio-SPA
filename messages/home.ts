@@ -1,8 +1,8 @@
 export const homeMessages = {
-  SOFTWARE_ENGINEER: "SOFTWARE ENGINEER",
-  FULLSTACK_DEVELOPER: "FULLSTACK DEVELOPER",
+  SOFTWARE_ENGINEER: "Sr. Software Engineer",
+  FULLSTACK_DEVELOPER: "Fullstack Developer",
   intro:
-    "With a knack for transforming ideas into captivating digital experiences, I harness the power of code to craft extraordinary web applications.",
+    "Experienced software Engineer with a knack for transforming ideas into captivating digital experiences, prioritizing attention to detail and ensuring lasting performance..",
   contactMe: "Reach out to me now and let's make it happen!",
   aboutPara1: `Greetings! I'm Anand`,
   aboutPara2: `A passionate software engineer with a strong focus on frontend development,

@@ -14,10 +14,6 @@ import {
   Typography,
 } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import CircleIcon from "@mui/icons-material/Circle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Parallax } from "react-scroll-parallax";
@@ -26,7 +22,6 @@ import { isMobileDevice } from "../../../helpers/utils";
 import { resume } from "../../../constants";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { homeMessages } from "../../../messages/home";
-import { ProfileCard } from "../../profileCard";
 import { Background } from "../../background";
 
 import classes from "./about.module.scss";
@@ -187,9 +182,6 @@ export const About = () => {
           marginBottom: "1rem",
         }}
       >
-        <Box sx={{ margin: "1rem", display: "flex", justifyContent: "center" }}>
-          <ProfileCard />
-        </Box>
         <Box
           sx={{
             margin: "1rem",
@@ -581,38 +573,6 @@ export const About = () => {
               </Accordion>
             ))}
           </Box>
-        </Box>
-        <Box
-          sx={{ display: "flex", marginTop: "3rem", justifyContent: "center" }}
-        >
-          <Link
-            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
-            href="https://twitter.com/ANANDKRISHNAN6"
-            target="_blank"
-          >
-            <TwitterIcon sx={{ fontSize: "2rem" }} />
-          </Link>
-          <Link
-            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
-            href="https://www.linkedin.com/in/anand-krishnan-mj"
-            target="_blank"
-          >
-            <LinkedInIcon sx={{ fontSize: "2rem" }} />
-          </Link>
-          <Link
-            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
-            href="https://www.facebook.com/anandkrishnan.anandkrishnan"
-            target="_blank"
-          >
-            <FacebookIcon sx={{ fontSize: "2rem" }} />
-          </Link>
-          <Link
-            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
-            href="https://github.com/Anand-Krishnan-M-J"
-            target="_blank"
-          >
-            <GitHubIcon sx={{ fontSize: "2rem" }} />
-          </Link>
         </Box>
         <Box
           sx={{ display: "flex", marginTop: "1rem", justifyContent: "center" }}

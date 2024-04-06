@@ -1,11 +1,14 @@
 import React, { useContext } from "react";
-import Image from "next/image";
-import { Box, Button, Link, Typography } from "@mui/material";
-import DownloadIcon from "@mui/icons-material/Download";
+import { Box, Link, Typography } from "@mui/material";
+import EmailIcon from "@mui/icons-material/Email";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import { homeMessages } from "../../../messages/home";
 import { DarKModeContext } from "../../layout/layout";
-import { resume } from "../../../constants";
+import { ProfileCard } from "../../profileCard";
 
 import classes from "./home.module.scss";
 
@@ -13,15 +16,7 @@ export const Home = () => {
   const { isDarkMode, darkModeIsloading } = useContext(DarKModeContext);
   return (
     <Box className={classes.intro__container}>
-      <div className={classes.intro__image__container}>
-        <Image
-          src={"/images/home.png"}
-          width={450}
-          height={450}
-          alt=""
-          priority
-        />
-      </div>
+      <ProfileCard />
       <div className={classes.intro__content}>
         {!darkModeIsloading && (
           <h2
@@ -53,35 +48,50 @@ export const Home = () => {
         <Typography className={classes.intro__description}>
           {homeMessages.intro}
         </Typography>
-        <Box className={classes.intro__button__container}>
+
+        <Box
+          className={classes.intro__links}
+          sx={{
+            display: "flex",
+            marginTop: "1rem",
+            flexWrap: "wrap",
+            alignItems: "center",
+          }}
+        >
           <Link
-            sx={{
-              color: isDarkMode ? "white" : "black",
-              textDecoration: "none",
-            }}
-            href={resume}
+            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
+            href="mailto:anandkrishmj@gmail.com"
+          >
+            <EmailIcon sx={{ fontSize: "2rem" }} />
+          </Link>
+
+          <Link
+            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
+            href="https://twitter.com/ANANDKRISHNAN6"
             target="_blank"
           >
-            <Button
-              variant="outlined"
-              sx={{
-                textDecoration: "none",
-                marginTop: "1rem",
-                border: `solid 1px ${isDarkMode ? "#4e4e4e" : "#00000059"}`,
-                color: isDarkMode ? "#a5a5a5" : "#313131",
-                ":hover": {
-                  borderColor: "#2753d7",
-                },
-              }}
-            >
-              Download Resume
-              <DownloadIcon
-                sx={{
-                  marginLeft: "0.5rem",
-                  color: isDarkMode ? "#a5a5a5" : "#00000059",
-                }}
-              />
-            </Button>
+            <TwitterIcon sx={{ fontSize: "2rem" }} />
+          </Link>
+          <Link
+            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
+            href="https://www.linkedin.com/in/anand-krishnan-mj"
+            target="_blank"
+          >
+            <LinkedInIcon sx={{ fontSize: "2rem" }} />
+          </Link>
+          <Link
+            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
+            href="https://www.facebook.com/anandkrishnan.anandkrishnan"
+            target="_blank"
+          >
+            <FacebookIcon sx={{ fontSize: "2rem" }} />
+          </Link>
+          <Link
+            sx={{ margin: "0.5rem", color: isDarkMode ? "white" : "black" }}
+            href="https://github.com/Anand-Krishnan-M-J"
+            target="_blank"
+          >
+            <GitHubIcon sx={{ fontSize: "2rem" }} />
           </Link>
         </Box>
       </div>

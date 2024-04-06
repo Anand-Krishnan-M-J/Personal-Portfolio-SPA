@@ -15,13 +15,14 @@ import { sectionMapping } from "../components/main/sectionMapping";
 import { RootState } from "../store/types";
 import { getProjects, projectStateType } from "../store/projects/reducer";
 import withScrollToPosition from "../hoc/scrollManager";
+import Cursor from "../components/Cursor";
 
 import classes from "./index.module.scss";
 
 export const TabContext = React.createContext({
   tabValue: 0,
   /* eslint-disable */
-  handleTabChange: (event: React.SyntheticEvent, newValue: number) => { },
+  handleTabChange: (event: React.SyntheticEvent, newValue: number) => {},
 });
 
 const Main = () => {
@@ -63,6 +64,7 @@ const Main = () => {
           <TabContext.Provider value={{ tabValue, handleTabChange }}>
             <Layout variant="l1">
               <>
+                <Cursor />
                 <Background />
                 <section ref={homeRef} className={classes["section__home"]}>
                   <Home />
@@ -73,7 +75,7 @@ const Main = () => {
                 >
                   <CardList
                     type="projects"
-                    description="Showcasing Some Of My Best Works"
+                    description="Things I have built"
                     title="My Portfolio"
                     data={projects}
                     sectionMapping={sectionMapping.portfolio}
@@ -97,7 +99,8 @@ const Main = () => {
               </>
             </Layout>
           </TabContext.Provider>
-        ) : (<></>
+        ) : (
+          <></>
         )}
       </div>
     </ParallaxProvider>
