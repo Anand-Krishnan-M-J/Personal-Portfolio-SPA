@@ -1,43 +1,40 @@
-import { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Box } from "@mui/material";
+
+import { useDarkMode } from "../../hooks/useDarkMode";
 
 import styles from "./styles.module.scss";
 
-const Cursor = () => {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+const RoundCursor: React.FC = () => {
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+  const { isDarkMode } = useDarkMode();
 
   useEffect(() => {
-    addEventListeners();
-    return () => removeEventListeners();
+    const updateCursorPosition = (e: MouseEvent) => {
+      setCursorPosition({ x: e.clientX, y: e.clientY });
+    };
+
+    window.addEventListener("mousemove", updateCursorPosition);
+
+    return () => {
+      window.removeEventListener("mousemove", updateCursorPosition);
+    };
   }, []);
 
-  const addEventListeners = () => {
-    document.addEventListener("mousemove", onMouseMove);
-  };
-
-  const removeEventListeners = () => {
-    document.removeEventListener("mousemove", onMouseMove);
-  };
-
-  const onMouseMove = (e: any) => {
-    setPosition({ x: e.pageX, y: e.pageY });
-  };
-
   return (
-    <div className={styles.wrapper}>
-      <div
-        style={{
-          transform: `translate(${position.x}px, ${position.y}px)`,
-        }}
-        className={styles.cursor}
-      ></div>
-      <div
-        style={{
-          transform: `translate(${position.x}px, ${position.y}px)`,
-        }}
-        className={styles.cursor_follower}
-      ></div>
-    </div>
+    <Box
+      sx={{
+        backgroundColor: isDarkMode
+          ? "rgba(247, 247, 247, 0.5)"
+          : "rgba(81, 81, 81, 0.404)",
+        boxShadow: isDarkMode
+          ? "0rem 0rem 10rem 3rem rgba(227, 227, 227, 0.35)"
+          : "0rem 0rem 10rem 5rem rgba(0, 0, 0, 0.1)",
+      }}
+      className={styles["round-cursor"]}
+      style={{ left: cursorPosition.x, top: cursorPosition.y }}
+    ></Box>
   );
 };
 
-export default Cursor;
+export default RoundCursor;

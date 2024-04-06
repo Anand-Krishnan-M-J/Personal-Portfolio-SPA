@@ -1,26 +1,11 @@
-.wrapper{
+.round-cursor {
+  position: fixed;
+  z-index: 9999; /* Ensure the cursor appears on top of other elements */
+  width: 12px; /* Adjust the size of the cursor */
+  height: 12px;
+  border-radius: 50%;
+  pointer-events: none;
   @media only screen and (max-width: 992px) {
     display: none;
   }
-}
-.cursor {
-  width: 4px;
-  height: 4px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 11;
-  transition-duration: 1.2s;
-  transition-timing-function: cubic-bezier(0.07, 1.18, 1, 1);
-}
-.cursor_follower {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  border: 2px solid #ffffff;
-  border-radius: 100px;
-  transition-duration: 0.1s;
-  transition-timing-function: cubic-bezier(0.07, 1.18, 1, 1);
 }
