@@ -1,5 +1,7 @@
 .profile__card {
   display: flex;
+  min-width: 230px;
+  margin-right: 1rem;
   border-radius: 50%;
   transition: 0.6s;
 }

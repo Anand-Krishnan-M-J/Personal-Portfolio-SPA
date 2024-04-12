@@ -16,7 +16,7 @@
         font-style: italic;
         font-weight: 900;
         max-width: 40ch;
-        font-size: 3rem;
+        font-size: 2.5rem;
         text-align: center;
         transform: scale(1);
         animation: scale forwards ease;
@@ -27,7 +27,6 @@
 .miniLogoContainer {
     @media screen and (min-width:767px) {
         margin-top: 8rem;
-
     }
 }
 

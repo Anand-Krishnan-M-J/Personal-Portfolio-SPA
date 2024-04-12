@@ -105,7 +105,7 @@ function Header({ onDarkModeToggle }: HeaderProps) {
             className={classes.desktop__menu}
           >
             <Box
-              className={classes.side__menu}
+              className={isDarkMode?classes.side__menu__dark:classes.side__menu__light}
               sx={{
                 display: "flex",
                 flexDirection: "column",

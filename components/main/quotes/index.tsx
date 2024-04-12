@@ -53,7 +53,12 @@ export const Quotes = () => {
           className={classes.miniLogoContainer}
           item
           xs={5}
-          sx={{ width: "100%", display: "flex", justifyContent: "center" }}
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "2rem",
+          }}
         >
           <Parallax
             easing="easeInOut"
