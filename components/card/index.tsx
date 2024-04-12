@@ -57,7 +57,6 @@ export const Card = ({
         justifyContent="center"
         sx={{
           padding: "1rem",
-          minHeight: "50vh",
         }}
       >
         <Grid
@@ -78,9 +77,6 @@ export const Card = ({
               src={image}
               alt={title}
             />
-          </Box>
-          <Box className={classes.card__tech}>
-            <TechUsed techStack={techStack} />
           </Box>
         </Grid>
         <Grid
@@ -141,13 +137,16 @@ export const Card = ({
           >
             {description}
           </Typography>
+          <Box className={classes.card__tech}>
+            <TechUsed techStack={techStack} />
+          </Box>
           <Box>
             {visitWebsite && (
               <Button
                 variant="outlined"
                 onClick={() => handleRedirectToWebSite(visitWebsite)}
                 sx={{
-                  width: "fit-content",
+                  width: "10rem",
                   margin: "1rem 1rem 0rem 0rem",
                   fontWeight: "600",
                   border: `solid 1px ${isDarkMode ? "#4e4e4e" : "#00000059"}`,
@@ -165,7 +164,7 @@ export const Card = ({
                 variant="outlined"
                 onClick={() => handleRedirectToWebSite(visitGithub)}
                 sx={{
-                  width: "fit-content",
+                  width: "10rem",
                   margin: "1rem 1rem 0rem 0rem",
                   fontWeight: "600",
                   border: `solid 1px ${isDarkMode ? "#4e4e4e" : "#00000059"}`,
@@ -182,7 +181,7 @@ export const Card = ({
               variant="outlined"
               onClick={handleRedirect}
               sx={{
-                width: "fit-content",
+                width: "10rem",
                 marginTop: "1rem",
                 border: `solid 1px ${isDarkMode ? "#4e4e4e" : "#00000059"}`,
                 color: isDarkMode ? "#a5a5a5" : "#434343",
@@ -200,7 +199,6 @@ export const Card = ({
             sx={{
               display: "flex",
               justifyContent: "flex-end",
-              marginTop: "5rem",
             }}
           >
             <ScrollRight />

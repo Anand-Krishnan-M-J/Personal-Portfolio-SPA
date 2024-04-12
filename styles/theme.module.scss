@@ -1,11 +1,21 @@
-@mixin section__border {
-    box-shadow: 0 0 0.4rem #8181811c;
-    border: solid 1px rgba(126, 126, 126, 0.091);
+@mixin section__border($dark-mode) {
+  @if $dark-mode {
+    box-shadow: 0 0 0.4rem #8181811c !important;
+    border: solid 1px rgba(126, 126, 126, 0.091) !important;
 
-    @media screen and (max-width:1200px) and (min-width: 768px) {
-        box-shadow: none !important;
-        border: none !important;
-        background-color: rgba(0, 0, 0, 0) !important;
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+      box-shadow: none !important;
+      border: none !important;
+      background-color: rgba(0, 0, 0, 0) !important;
     }
+  } @else {
+    box-shadow: 0 0 0.7rem #a1cdff77, 0.3rem 0.3rem 0.7rem #80bbffaf !important;
+    border: solid 1px #0000001c !important;
 
+    @media screen and (max-width: 1200px) and (min-width: 768px) {
+      box-shadow: none !important;
+      border: none !important;
+      background-color: rgba(0, 0, 0, 0) !important;
+    }
+  }
 }

@@ -149,7 +149,13 @@ export const Contact = () => {
           boxShadow: "0 0 1rem #00000078",
         }),
       }}
-      className={joinClass(classes.contact__container)}
+      className={
+        joinClass(
+          classes.contact__container,
+        isDarkMode
+          ? classes.contact__container__dark
+          : classes.contact__container__light
+   ) }
     >
       <Box
         sx={{
@@ -164,7 +170,11 @@ export const Contact = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Parallax
             easing={"easeInOut"}
-            {...!isMobileDevice() && { opacity: [0.3, 1], translateX: [-50, 1] }}>
+            {...(!isMobileDevice() && {
+              opacity: [0.3, 1],
+              translateX: [-50, 1],
+            })}
+          >
             <Typography
               sx={{
                 fontSize: "large",
@@ -179,7 +189,11 @@ export const Contact = () => {
         <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
           <Parallax
             easing="easeInOut"
-            {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 0] }}> 
+            {...(!isMobileDevice() && {
+              opacity: [0.5, 1],
+              translateX: [20, 0],
+            })}
+          >
             <Typography
               className={classes.contact__title}
               sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}
@@ -306,7 +320,7 @@ export const Contact = () => {
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={5} sx={{ marginBottom: "5rem" }}>
+          <Grid item xs={12} md={5} sx={{ marginBottom: "2rem" }}>
             <Box sx={{ padding: "1rem" }}>
               <Typography
                 fontWeight={600}
@@ -403,7 +417,12 @@ export const Contact = () => {
               </Box>
               <Box
                 className={classes.contact__socials}
-                sx={{ display: "flex", justifyContent: "space-evenly", maxWidth:"280px", marginTop: "2rem"}}
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  maxWidth: "280px",
+                  marginTop: "2rem",
+                }}
               >
                 <MuiLink
                   sx={{ margin: "0.8rem", color: "#2753d7" }}

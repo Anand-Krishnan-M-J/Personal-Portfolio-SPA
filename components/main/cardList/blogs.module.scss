@@ -28,11 +28,14 @@
         flex-direction: column;
         width: 85%;
         max-width: 1400px;
-        @include section__border;
-        padding-bottom: 3rem;
+        &__dark{
+            @include section__border(true);
+        }
+        &__light{
+            @include section__border(false);
+        }
         position: relative;
         border-radius: 1rem;
-        margin-bottom: 5rem;
 
         @media screen and (max-width:767px) {
             width: 100%;
@@ -59,7 +62,7 @@
             background-color: #5a5a5aa8;
         }
 
-        @media screen and (max-width:"767px") {
+        @media screen and (max-width:767px) {
             &::-webkit-scrollbar-track {
                 display: none;
             }

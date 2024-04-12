@@ -18,7 +18,7 @@ import CircleIcon from "@mui/icons-material/Circle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Parallax } from "react-scroll-parallax";
 
-import { isMobileDevice } from "../../../helpers/utils";
+import { isMobileDevice, joinClass } from "../../../helpers/utils";
 import { resume } from "../../../constants";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { homeMessages } from "../../../messages/home";
@@ -128,7 +128,12 @@ export const About = () => {
   );
   return (
     <Box
-      className={classes.about__container}
+      className={joinClass(
+        classes.about__container,
+        isDarkMode
+          ? classes.about__container__dark
+          : classes.about__container__light,
+      )}
       sx={{
         ...(isDarkMode && {
           border: "solid 1px #2f2f2fc4",
@@ -178,10 +183,14 @@ export const About = () => {
         sx={{
           display: "flex",
           justifyContent: "center",
+          alignItems: "center",
           flexWrap: "wrap",
           marginBottom: "1rem",
         }}
       >
+        <Box>
+          <Typography className={classes.about__hello}>👋</Typography>
+        </Box>
         <Box
           sx={{
             margin: "1rem",
@@ -197,7 +206,7 @@ export const About = () => {
           <Typography>{homeMessages.aboutPara2}</Typography>
         </Box>
       </Box>
-      <Box>
+      <Box sx={{ width: "100%", padding: "1.5rem" }}>
         <Box sx={{ width: "100%" }}>
           <Box
             className={classes["experience--desktop"]}
@@ -575,7 +584,7 @@ export const About = () => {
           </Box>
         </Box>
         <Box
-          sx={{ display: "flex", marginTop: "1rem", justifyContent: "center" }}
+          sx={{ display: "flex", marginTop: "2rem", justifyContent: "center" }}
         >
           <Link
             sx={{

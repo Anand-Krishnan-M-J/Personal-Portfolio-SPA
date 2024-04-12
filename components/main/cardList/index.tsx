@@ -5,7 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Parallax } from "react-scroll-parallax";
 import Image from "next/image";
 
-import { isMobileDevice } from "../../../helpers/utils";
+import { isMobileDevice, joinClass } from "../../../helpers/utils";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { Card } from "../../card";
 import { Background } from "../../background";
@@ -38,7 +38,12 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
 
   return (
     <Box
-      className={classes.blogs__container}
+      className={joinClass(
+        classes.blogs__container,
+        isDarkMode
+          ? classes.blogs__container__dark
+          : classes.blogs__container__light,
+      )}
       sx={{
         overflow: "hidden",
         /* eslint-disable */
@@ -62,25 +67,35 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
             display: "flex",
             justifyContent: "center",
             color: isDarkMode ? "#696969" : "#353839aa",
-            fontWeight: 800
+            fontWeight: 800,
           }}
         >
           <Parallax
             easing="easeInOut"
-            {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [-50, 1] }}>
+            {...(!isMobileDevice() && {
+              opacity: [0.5, 1],
+              translateX: [-50, 1],
+            })}
+          >
             <Typography
               sx={{
                 fontSize: "large",
                 fontWeight: "300",
                 color: isDarkMode ? "#ffffffa6" : "#2d2d2d",
               }}
-            >{description}</Typography>
+            >
+              {description}
+            </Typography>
           </Parallax>
         </Box>
         <Box component="span" sx={{ margin: "auto" }}>
           <Parallax
             easing="easeInOut"
-            {...!isMobileDevice() && { opacity: [0.5, 1], translateX: [20, 1] }}>
+            {...(!isMobileDevice() && {
+              opacity: [0.5, 1],
+              translateX: [20, 1],
+            })}
+          >
             <Typography
               className={classes.blogs__title}
               sx={{ fontSize: "3rem", fontWeight: "600", marginBottom: "2rem" }}
@@ -117,7 +132,7 @@ export const CardList = ({ type, description, title, data }: CardListProps) => {
               justifyContent: "center",
               flexWrap: "wrap",
               cursor: "grab",
-              userSelect: "none"
+              userSelect: "none",
             }}
           >
             <Box

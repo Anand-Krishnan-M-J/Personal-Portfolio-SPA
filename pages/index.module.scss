@@ -1,14 +1,18 @@
 @mixin sectionCommon {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    @media screen and (min-width:767px) {
+        margin-bottom: 3rem;
+    }
 }
 
 .section {
     &__home {
-        @include sectionCommon();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
     }
 
     &__projects {
@@ -24,8 +28,7 @@
     }
 
     &__skills {
-        display: flex;
-        justify-content: center;
+        @include sectionCommon();
     }
 
     &__contact {
@@ -37,6 +40,5 @@
     }
 
     &__footer {
-        padding-bottom: 3rem;
     }
 }

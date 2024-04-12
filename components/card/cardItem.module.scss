@@ -1,7 +1,7 @@
 .card {
   &__container {
-    padding: 2rem;
-    margin: 2rem;
+    padding: 0rem 1rem;
+    margin: 0rem 1rem;
     @media only screen and (max-width: 780px) {
       padding: 0rem;
       margin: 0rem;
@@ -30,6 +30,7 @@
 
 .card {
   &__tech {
+    margin-bottom: 0.5rem;
     @media only screen and (max-width: 780px) {
       display: none;
     }
@@ -150,7 +151,7 @@
 }
 .card__container:hover::before {
   -webkit-animation: shine 1.5s;
-  animation: shine 1.5s;
+  animation: shine 1s;
   transition: ease-in-out all;
   @media only screen and (max-width: 992px) {
     animation: none;

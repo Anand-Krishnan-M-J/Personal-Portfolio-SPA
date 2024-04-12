@@ -6,6 +6,13 @@
         -webkit-text-fill-color: transparent;
         margin-block-start: 0 !important;
     }
+    &__hello{
+        font-size: 3rem !important;
+        margin-right: 3rem !important;
+        @media screen and (max-width:1200px) {
+            display: none;
+        }
+    }
 
     &__container {
         display: flex;
@@ -13,8 +20,12 @@
         width: 85%;
         max-width: 1400px;
         margin-bottom: 3rem;
-        @include section__border;
-        padding-bottom: 3rem;
+        &__dark{
+            @include section__border(true);
+        }
+        &__light{
+            @include section__border(false);
+        }
         position: relative;
         border-radius: 1rem;
 

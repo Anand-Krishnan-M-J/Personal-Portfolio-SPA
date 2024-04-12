@@ -26,10 +26,10 @@ const RoundCursor: React.FC = () => {
       sx={{
         backgroundColor: isDarkMode
           ? "rgba(247, 247, 247, 0.5)"
-          : "rgba(81, 81, 81, 0.404)",
+          : "rgba(247, 247, 247, 1)",
         boxShadow: isDarkMode
           ? "0rem 0rem 10rem 3rem rgba(227, 227, 227, 0.35)"
-          : "0rem 0rem 10rem 5rem rgba(0, 0, 0, 0.1)",
+          : "0rem 0rem 10rem 5rem #ddedffad",
       }}
       className={styles["round-cursor"]}
       style={{ left: cursorPosition.x, top: cursorPosition.y }}

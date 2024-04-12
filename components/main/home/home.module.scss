@@ -99,7 +99,7 @@ $animation-time: 1.3s;
 .intro {
   &__content {
     margin-top: 0.5rem;
-    padding: 1rem;
+    padding: 1rem 0rem;
   }
 
   &__container {
@@ -114,11 +114,17 @@ $animation-time: 1.3s;
     border-radius: 0.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    @include section__border;
+    &__dark {
+      @include section__border(true);
+    }
+    &__light {
+      @include section__border(false);
+    }
 
     @media screen and (max-width: 767px) {
       min-height: 100vh;
       justify-content: center;
+      margin-bottom: 2rem;
     }
   }
 
@@ -184,7 +190,6 @@ $animation-time: 1.3s;
   &__description {
     font-weight: 500;
     max-width: 670px;
-    width: 90%;
     line-height: 1.6;
     margin-top: 1rem;
     padding-top: 1rem;

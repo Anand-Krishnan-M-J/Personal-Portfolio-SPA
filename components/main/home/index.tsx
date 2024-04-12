@@ -9,13 +9,23 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { homeMessages } from "../../../messages/home";
 import { DarKModeContext } from "../../layout/layout";
 import { ProfileCard } from "../../profileCard";
+import { joinClass } from "../../../helpers/utils";
 
 import classes from "./home.module.scss";
 
 export const Home = () => {
   const { isDarkMode, darkModeIsloading } = useContext(DarKModeContext);
   return (
-    <Box className={classes.intro__container}>
+    <Box
+      className={joinClass(
+        classes.intro__container,
+        (!darkModeIsloading &&
+          (isDarkMode
+            ? classes.intro__container__dark
+            : classes.intro__container__light)) ||
+          "",
+      )}
+    >
       <ProfileCard />
       <div className={classes.intro__content}>
         {!darkModeIsloading && (

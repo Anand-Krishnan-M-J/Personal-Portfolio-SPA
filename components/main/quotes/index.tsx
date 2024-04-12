@@ -18,7 +18,6 @@ export const Quotes = () => {
 
   return (
     <Box
-      className={classes.quote__wrapper}
       sx={{
         width: "100%",
         display: "flex",
