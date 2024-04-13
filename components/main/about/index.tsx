@@ -18,7 +18,11 @@ import CircleIcon from "@mui/icons-material/Circle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Parallax } from "react-scroll-parallax";
 
-import { isMobileDevice, joinClass } from "../../../helpers/utils";
+import {
+  calculateExperience,
+  isMobileDevice,
+  joinClass,
+} from "../../../helpers/utils";
 import { resume } from "../../../constants";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { homeMessages } from "../../../messages/home";
@@ -226,6 +230,15 @@ export const About = () => {
             >
               Work Experience
             </Typography>
+            <Typography
+              className={classes.experience__title}
+              sx={{
+                margin: "0rem 0rem 1rem 0rem",
+                fontWeight: 600,
+              }}
+            >
+              {calculateExperience()}
+            </Typography>
             <Box sx={{ display: "flex", flexDirection: "row" }}>
               <Tabs
                 orientation="vertical"
@@ -265,7 +278,12 @@ export const About = () => {
                         <Typography fontSize={"1.1rem"} fontWeight="600">
                           {item.designation}
                         </Typography>
-                        <Typography>{item.institute}</Typography>
+                        <Typography
+                          fontSize={"0.8rem"}
+                        >{`${item?.startDate} - ${item?.endDate}`}</Typography>
+                        <Typography fontSize={"0.8rem"}>
+                          {item.institute}
+                        </Typography>
                       </Box>
                     }
                   />
@@ -312,12 +330,20 @@ export const About = () => {
             <Typography
               className={classes.experience__title}
               sx={{
-                margin: "0rem 0rem 1rem 0rem",
                 fontSize: "2rem",
                 fontWeight: 600,
               }}
             >
               Work Experience
+            </Typography>
+            <Typography
+              className={classes.experience__title}
+              sx={{
+                margin: "0rem 0rem 2rem 0rem",
+                fontWeight: 600,
+              }}
+            >
+              {calculateExperience()}
             </Typography>
             {experience.map((item, index) => (
               <Box key={`expMobTab-${index}`}>
@@ -453,9 +479,9 @@ export const About = () => {
                     <Tab
                       key={`eduTabDesk-${index}`}
                       sx={{
+                        textAlign: "left",
                         minWidth: "1rem",
                         width: "8rem",
-                        fontSize: "1.1rem",
                         textTransform: "none",
                         fontWeight: "600",
                         color: isDarkMode ? "#696969" : "#353839aa",

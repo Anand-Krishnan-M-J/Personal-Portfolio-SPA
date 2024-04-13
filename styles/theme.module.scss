@@ -1,8 +1,9 @@
 @mixin section__border($dark-mode) {
   @if $dark-mode {
-    box-shadow: 0 0 0.4rem #8181811c !important;
-    border: solid 1px rgba(126, 126, 126, 0.091) !important;
-
+    box-shadow: 0 0 1rem #000000b0 !important;
+    border: solid 1px rgb(32, 32, 32) !important;
+    background-color: rgba(255, 255, 255, 0.016);
+    
     @media screen and (max-width: 1200px) and (min-width: 768px) {
       box-shadow: none !important;
       border: none !important;

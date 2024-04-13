@@ -1,7 +1,8 @@
-@use '../../../styles/theme.module.scss' as *;
+@use "../../../styles/theme.module.scss" as *;
 $nav-item-width: 6rem;
 $nav-item-spacing: 1rem;
-$nav-items: "home" 5,
+$nav-items:
+  "home" 5,
   "projects" 4,
   "skills" 3,
   "blogs" 2,
@@ -26,7 +27,7 @@ $nav-items: "home" 5,
 .logo {
   font-size: 1.5rem;
   color: white;
-  font-family: 'Fira', sans-serif;
+  font-family: "Fira", sans-serif;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -47,7 +48,6 @@ $nav-items: "home" 5,
   text-decoration: none;
   color: #74dacc;
   font-size: 1rem;
-
 }
 
 .toggle {
@@ -56,7 +56,7 @@ $nav-items: "home" 5,
     top: 0.5rem;
     right: 0.5rem;
 
-    @media screen and (min-width:"767px") {
+    @media screen and (min-width: "767px") {
       display: none;
     }
   }
@@ -93,19 +93,17 @@ $nav-items: "home" 5,
       var(--offset-orthogonal) 0 0 var(--ray-size),
       0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size),
       0 var(--offset-orthogonal) 0 var(--ray-size),
-      calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
+      calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0
+        var(--ray-size),
       var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size),
       calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size),
-      var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size),
-    ;
+      var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
   }
 }
-
 
 .logo__container {
   padding: 0.5rem;
 }
-
 
 @media only screen and (max-width: 767px) {
   .ham {
@@ -134,17 +132,17 @@ $nav-items: "home" 5,
   .logo {
     font-size: 2.5rem;
   }
-
 }
 
 .side__menu {
-  &__dark{
+  &__dark {
     z-index: 10;
-    @include section__border(true)
+    @include section__border(true);
   }
-  &__light{
+  &__light {
     z-index: 150;
-    @include section__border(false)
+    border: solid 1px #0000001c !important;
+    box-shadow:
+      0rem 0rem 0.5rem #62abff !important;
   }
-
 }
