@@ -29,7 +29,7 @@ const RoundCursor: React.FC = () => {
           : "rgba(247, 247, 247, 1)",
         boxShadow: isDarkMode
           ? "0rem 0rem 10rem 3rem rgba(227, 227, 227, 0.35)"
-          : "0rem 0rem 10rem 5rem #ddedffad",
+          : "0rem 0rem 10rem 5rem rgba(255, 255, 255, 0.2)",
       }}
       className={styles["round-cursor"]}
       style={{ left: cursorPosition.x, top: cursorPosition.y }}
