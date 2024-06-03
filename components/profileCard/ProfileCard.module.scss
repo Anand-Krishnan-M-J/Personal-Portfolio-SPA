@@ -20,12 +20,14 @@
   position: relative;
   top: 0;
   left: 0;
-  height: 230px;
-  width: 230px;
+  height: 232px;
+  width: 232px;
   overflow: hidden;
   border-radius: 50%;
   opacity: 0;
   animation: fadeIn 2s ease forwards;
+  padding: 0.4rem;
+  box-shadow: 0rem 0rem 0.2rem grey;
 }
 .profile__card::before {
   position: absolute;
