@@ -129,9 +129,12 @@ export const Skills = () => {
           {skills[value].items.map((item) => (
             <Box
               key={item.skillLabel}
+              className={classes.skills__image}
               sx={{
-                width: "100px",
-                padding: "0.5rem",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+                justifyContent:"center",
                 border: `solid 1px ${isDarkMode ? "#7979797d" : "#0000002e"}`,
               }}
             >
@@ -139,29 +142,38 @@ export const Skills = () => {
                 <Image
                   src={item.src}
                   alt={item.skillLabel}
-                  width={70}
-                  height={70}
+                  width={80}
+                  height={80}
                   loading="eager"
                 />
+                <Typography
+                  sx={{
+                    textAlign: "center",
+                    fontSize: "0.8rem",
+                    fontWeight: 600,
+                  }}
+                >
+                  {item.skillLabel}
+                </Typography>
               </div>
               <div className={classes.skills__image__mobile}>
                 <Image
                   src={item.mobileSrc}
                   alt={item.skillLabel}
-                  width={80}
-                  height={80}
+                  width={40}
+                  height={40}
                   loading="eager"
                 />
+                <Typography
+                  sx={{
+                    textAlign: "center",
+                    fontSize: "0.6rem",
+                    fontWeight: 600,
+                  }}
+                >
+                  {item.skillLabel}
+                </Typography>
               </div>
-              <Typography
-                sx={{
-                  textAlign: "center",
-                  fontSize: "0.8rem",
-                  fontWeight: 600,
-                }}
-              >
-                {item.skillLabel}
-              </Typography>
             </Box>
           ))}
         </Box>

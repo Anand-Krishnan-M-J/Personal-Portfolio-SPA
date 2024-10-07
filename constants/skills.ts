@@ -18,6 +18,11 @@ const skills = [
         mobileSrc: "/skills/mobile/redux.svg",
       },
       {
+        skillLabel: "GraphQL",
+        src: "/skills/graphql.png",
+        mobileSrc: "/skills/graphql.png",
+      },
+      {
         skillLabel: "Typescript",
         src: "/skills/ts.svg",
         mobileSrc: "/skills/mobile/ts.svg",
@@ -86,11 +91,6 @@ const skills = [
         skillLabel: "CSS3",
         src: "/skills/css.svg",
         mobileSrc: "/skills/css.svg",
-      },
-      {
-        skillLabel: "Javascript (ES6+)",
-        src: "/skills/js.svg",
-        mobileSrc: "/skills/mobile/js.svg",
       },
     ],
   },

@@ -13,6 +13,12 @@
     }
 
     &__image {
+        width: 59px;
+        padding: 0.8rem;
+        @media screen and (min-width:767px) {
+            width: 100px;
+            padding: 0.5rem;
+        }
         &__desk {
             display: none;
 
