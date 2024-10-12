@@ -19,7 +19,7 @@ const skills = [
       },
       {
         skillLabel: "GraphQL",
-        src: "/skills/graphql.png",
+        src: "/skills/graphql.svg",
         mobileSrc: "/skills/graphql.png",
       },
       {
