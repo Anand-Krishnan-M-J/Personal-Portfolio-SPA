@@ -209,6 +209,7 @@ export const projects = [
       "React.JS",
       "Typescript",
       "Redux",
+      "GraphQL",
       "Saga",
       "Monorepo (Lerna)",
       "Google Analytics",
