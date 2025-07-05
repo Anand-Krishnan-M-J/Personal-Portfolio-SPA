@@ -64,9 +64,9 @@ const experience = [
     worksDone: [
       "Contribute to collaborative development, ensuring seamless user experiences for a multinational fashion retail giant's SPA, serving more than 40 million users and manage CI/CD for production releases, ensuring smooth deployment, and promptly resolving issues.",
       "Uphold high code quality, increasing test coverage from 62% to 85%, resulting in fewer bugs in subsequent releases and refactor code for scalable React architecture, enabling global expansion and adaptability.",
-      "Developed proof of concept tools for API visualization, addressing customer-reported issues and actively participate in planning and executing internal tools projects, optimizing build sizes, and ensuring efficient code sharing."
+      "Developed proof of concept tools for API visualization, addressing customer-reported issues and actively participate in planning and executing internal tools projects, optimizing build sizes, and ensuring efficient code sharing.",
     ],
-  }
+  },
 ];
 const education = [
   {

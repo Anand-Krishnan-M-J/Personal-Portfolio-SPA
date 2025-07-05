@@ -15,7 +15,6 @@ import { sectionMapping } from "../components/main/sectionMapping";
 import { RootState } from "../store/types";
 import { getProjects, projectStateType } from "../store/projects/reducer";
 import withScrollToPosition from "../hoc/scrollManager";
-import Cursor from "../components/Cursor";
 
 import classes from "./index.module.scss";
 

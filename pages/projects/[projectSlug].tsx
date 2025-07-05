@@ -6,7 +6,6 @@ import Layout from "../../components/layout/layout";
 import { getProjectsApi } from "../../services/projects";
 import { TechUsed } from "../../components/techUsed";
 import withScrollToPosition from "../../hoc/scrollManager";
-import Cursor from "../../components/Cursor";
 
 interface ProjectDetailsType {
   id: string;
