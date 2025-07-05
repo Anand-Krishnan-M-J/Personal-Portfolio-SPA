@@ -33,6 +33,18 @@ import classes from "./about.module.scss";
 const experience = [
   {
     id: 1,
+    institute: "OpenTable (Booking Holdings Inc)",
+    startDate: "Jan 2025",
+    endDate: "Present",
+    designation: "Engineer II",
+    worksDone: [
+      "Develop and maintain responsive, high-performance React applications focused on restaurant-facing features, enabling restaurants to efficiently manage reservations, guest experiences, and table availability.",
+      "Partner closely with product, design, and backend teams to architect and deliver robust, maintainable UI solutions using React, Redux, and TypeScript — ensuring seamless alignment with OpenTable’s modular platform architecture and elevating the experience for restaurant partners worldwide.",
+      "Contribute to feature rollouts and iterative improvements within the restaurant operations suite, enhancing usability and performance across web tools used by thousands of restaurants globally.",
+    ],
+  },
+  {
+    id: 2,
     institute: "QBurst",
     startDate: "Jan 2024",
     endDate: "Present",
@@ -44,7 +56,7 @@ const experience = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     institute: "QBurst",
     startDate: "Sep 2020",
     endDate: "Dec 2023",
@@ -52,45 +64,9 @@ const experience = [
     worksDone: [
       "Contribute to collaborative development, ensuring seamless user experiences for a multinational fashion retail giant's SPA, serving more than 40 million users and manage CI/CD for production releases, ensuring smooth deployment, and promptly resolving issues.",
       "Uphold high code quality, increasing test coverage from 62% to 85%, resulting in fewer bugs in subsequent releases and refactor code for scalable React architecture, enabling global expansion and adaptability.",
-      "Developed proof of concept tools for API visualization, addressing customer-reported issues and actively participate in planning and executing internal tools projects, optimizing build sizes, and ensuring efficient code sharing.",
-      "Contributed significantly to internal tools projects, actively engaging in planning, execution, and code review phases. Demonstrated unwavering dedication to fostering efficient code sharing and maintenance practices across the development lifecycle. These applications played a vital role, catering to the diverse needs of over seven different teams within the company.",
+      "Developed proof of concept tools for API visualization, addressing customer-reported issues and actively participate in planning and executing internal tools projects, optimizing build sizes, and ensuring efficient code sharing."
     ],
-  },
-  {
-    id: 3,
-    institute: "IIT-BHU",
-    startDate: "June 2019",
-    endDate: "Aug 2019",
-    designation: "Trainee",
-    worksDone: [
-      "Worked on designing, simulating and testing of Meta-Surface based Antennas for radio frequency wireless communication.",
-      <span key="pub1">
-        One of my first works was approved and published in the{" "}
-        <a
-          style={{ textDecoration: "underline" }}
-          target="blank"
-          href="https://www.springerprofessional.de/en/dual-band-fss-backed-printed-antenna-with-fractal-geometry-for-w/18830738"
-        >
-          {" "}
-          7th international conference on Computer and devices for Communication
-          (CODEC)
-        </a>{" "}
-        held on December, 2019
-      </span>,
-      <span key="pub2">
-        Later on I came up with my second prototype and was published in{" "}
-        <a
-          style={{ textDecoration: "underline" }}
-          target="blank"
-          href="https://ieeexplore.ieee.org/document/9113517"
-        >
-          {" "}
-          2020 URSI Regional Conference on Radio Science (IEEE)
-        </a>
-        .
-      </span>,
-    ],
-  },
+  }
 ];
 const education = [
   {

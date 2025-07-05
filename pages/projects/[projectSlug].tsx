@@ -43,7 +43,6 @@ const Project = ({
   };
   return (
     <>
-      <Cursor />
       <Layout variant="l3" title="Projects">
         <Box
           sx={{

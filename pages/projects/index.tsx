@@ -9,7 +9,6 @@ import Layout from "../../components/layout/layout";
 import { projects } from "../../mock/projects";
 import { ScrollDown } from "../../components/scrolldown";
 import { TechUsed } from "../../components/techUsed";
-import Cursor from "../../components/Cursor";
 
 function Projects() {
   //alternative for data fetching
@@ -23,7 +22,6 @@ function Projects() {
   };
   return (
     <>
-      <Cursor />
       <Layout variant="l2" title="Projects">
         <Grid container sx={{ marginTop: "2rem" }}>
           {projects?.map((data: any) => (

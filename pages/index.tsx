@@ -64,7 +64,6 @@ const Main = () => {
           <TabContext.Provider value={{ tabValue, handleTabChange }}>
             <Layout variant="l1">
               <>
-                <Cursor />
                 <Background />
                 <section ref={homeRef} className={classes["section__home"]}>
                   <Home />
