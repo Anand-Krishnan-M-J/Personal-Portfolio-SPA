@@ -108,10 +108,10 @@ export const Home = () => {
         <Box
           className={classes.intro__button__container}
           sx={{
-            display: 'flex',
+            display: "flex",
             justifyContent: {
-              xs: 'center', // center on mobile
-              md: 'flex-start', // left on desktop
+              xs: "center", // center on mobile
+              md: "flex-start", // left on desktop
             },
           }}
         >

@@ -1,14 +1,18 @@
-import React, { useState, useMemo, useRef, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-import { PDFDownloadLink, PDFViewer } from '@react-pdf/renderer';
-import CVDocument from '../../components/resumeBuilder/CVDocument';
-import initialCvData from '../../data/cv-data.json';
-import styles from './index.module.scss';
+import React, { useState, useMemo, useRef, useEffect } from "react";
+import dynamic from "next/dynamic";
+import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
+
+import CVDocument from "../../components/resumeBuilder/CVDocument";
+import initialCvData from "../../data/cv-data.json";
+
+import styles from "./index.module.scss";
 
 // Dynamically import Monaco Editor to avoid SSR issues
-const Editor = dynamic(() => import('@monaco-editor/react'), {
+const Editor = dynamic(() => import("@monaco-editor/react"), {
   ssr: false,
-  loading: () => <div style={{ color: '#666', padding: 20 }}>Loading editor...</div>
+  loading: () => (
+    <div style={{ color: "#666", padding: 20 }}>Loading editor...</div>
+  ),
 });
 
 const defaultJson = JSON.stringify(initialCvData, null, 2);
@@ -65,7 +69,9 @@ interface CVData {
 const ResumeBuilder: React.FC = () => {
   const [jsonString, setJsonString] = useState<string>(defaultJson);
   const [parseError, setParseError] = useState<string | null>(null);
-  const [lastValidData, setLastValidData] = useState<CVData>(initialCvData as CVData);
+  const [lastValidData, setLastValidData] = useState<CVData>(
+    initialCvData as CVData,
+  );
   const [isMounted, setIsMounted] = useState(false);
   const editorRef = useRef<any>(null);
 
@@ -86,7 +92,7 @@ const ResumeBuilder: React.FC = () => {
   }, [jsonString]);
 
   const handleEditorChange = (value: string | undefined) => {
-    setJsonString(value || '');
+    setJsonString(value || "");
   };
 
   const handleEditorMount = (editor: any) => {
@@ -98,14 +104,16 @@ const ResumeBuilder: React.FC = () => {
       <div className={styles.header}>
         <h1>CV Generator</h1>
         {isMounted && (
-          <PDFDownloadLink 
-            document={<CVDocument data={cvData || initialCvData as CVData} />} 
+          <PDFDownloadLink
+            document={<CVDocument data={cvData || (initialCvData as CVData)} />}
             fileName="Anand_Krishnan_CV.pdf"
             className={styles.downloadButton}
           >
-            {({ blob, url, loading, error }) => {
-              if (error) console.error('PDF Error:', error);
-              return loading ? 'Loading document...' : 'Download PDF';
+            {({ loading, error }) => {
+              if (error) {
+                return "Error generating PDF";
+              }
+              return loading ? "Loading document..." : "Download PDF";
             }}
           </PDFDownloadLink>
         )}
@@ -114,7 +122,9 @@ const ResumeBuilder: React.FC = () => {
         <div className={styles.editorPanel}>
           <div className={styles.editorHeader}>
             <span>CV Data (JSON)</span>
-            {parseError && <span className={styles.errorBadge}>Invalid JSON</span>}
+            {parseError && (
+              <span className={styles.errorBadge}>Invalid JSON</span>
+            )}
           </div>
           <div className={styles.editorWrapper}>
             {isMounted && (
@@ -125,11 +135,15 @@ const ResumeBuilder: React.FC = () => {
                 onChange={handleEditorChange}
                 onMount={handleEditorMount}
                 theme="light"
-                loading={<div style={{ color: '#666', padding: 20 }}>Loading editor...</div>}
+                loading={
+                  <div style={{ color: "#666", padding: 20 }}>
+                    Loading editor...
+                  </div>
+                }
                 options={{
                   minimap: { enabled: false },
                   fontSize: 13,
-                  wordWrap: 'on',
+                  wordWrap: "on",
                   formatOnPaste: true,
                   formatOnType: true,
                   automaticLayout: true,
@@ -155,7 +169,11 @@ const ResumeBuilder: React.FC = () => {
               </div>
             )}
             {isMounted && (
-              <PDFViewer className={styles.pdfViewer} width="100%" height="100%">
+              <PDFViewer
+                className={styles.pdfViewer}
+                width="100%"
+                height="100%"
+              >
                 <CVDocument data={cvData || lastValidData} />
               </PDFViewer>
             )}
@@ -167,4 +185,3 @@ const ResumeBuilder: React.FC = () => {
 };
 
 export default ResumeBuilder;
-
