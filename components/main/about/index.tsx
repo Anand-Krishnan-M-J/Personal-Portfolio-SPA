@@ -4,8 +4,6 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Button,
-  Link,
   List,
   ListItemIcon,
   ListItemText,
@@ -13,7 +11,6 @@ import {
   Tabs,
   Typography,
 } from "@mui/material";
-import DownloadIcon from "@mui/icons-material/Download";
 import CircleIcon from "@mui/icons-material/Circle";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { Parallax } from "react-scroll-parallax";
@@ -23,51 +20,48 @@ import {
   isMobileDevice,
   joinClass,
 } from "../../../helpers/utils";
-import { resume } from "../../../constants";
 import { useDarkMode } from "../../../hooks/useDarkMode";
 import { homeMessages } from "../../../messages/home";
 import { Background } from "../../background";
+import DownloadResumeButton from "../../resumeBuilder/DownloadResumeButton";
+import cvData from "../../../data/cv-data.json";
 
 import classes from "./about.module.scss";
 
-const experience = [
-  {
-    id: 1,
-    institute: "OpenTable (Booking Holdings Inc)",
-    startDate: "Jan 2025",
-    endDate: "Present",
-    designation: "Engineer II",
-    worksDone: [
-      "Develop and maintain responsive, high-performance React applications focused on restaurant-facing features, enabling restaurants to efficiently manage reservations, guest experiences, and table availability.",
-      "Partner closely with product, design, and backend teams to architect and deliver robust, maintainable UI solutions using React, Redux, and TypeScript — ensuring seamless alignment with OpenTable’s modular platform architecture and elevating the experience for restaurant partners worldwide.",
-      "Contribute to feature rollouts and iterative improvements within the restaurant operations suite, enhancing usability and performance across web tools used by thousands of restaurants globally.",
-    ],
-  },
-  {
-    id: 2,
-    institute: "QBurst",
-    startDate: "Jan 2024",
-    endDate: "Present",
-    designation: "Senior Software Engineer",
-    worksDone: [
-      "Led multiple successful project initiatives by translating client requirements into comprehensive technical specifications.",
-      "Contributing significantly to the core frontend team of a multinational fashion retail giant in Japan. Played a crucial role in developing a user-friendly website for over 40 million active users. Introduced new features, fixed numerous bugs, handled several technical debts, and managed smooth releases.",
-      "Managed and mentored a team of junior developers from Japan and India to ensure timely and successful project deliveries.",
-    ],
-  },
-  {
-    id: 3,
-    institute: "QBurst",
-    startDate: "Sep 2020",
-    endDate: "Dec 2023",
-    designation: "Software Engineer",
-    worksDone: [
-      "Contribute to collaborative development, ensuring seamless user experiences for a multinational fashion retail giant's SPA, serving more than 40 million users and manage CI/CD for production releases, ensuring smooth deployment, and promptly resolving issues.",
-      "Uphold high code quality, increasing test coverage from 62% to 85%, resulting in fewer bugs in subsequent releases and refactor code for scalable React architecture, enabling global expansion and adaptability.",
-      "Developed proof of concept tools for API visualization, addressing customer-reported issues and actively participate in planning and executing internal tools projects, optimizing build sizes, and ensuring efficient code sharing.",
-    ],
-  },
-];
+// Transform CV experience data to match About component structure
+const transformExperienceData = () => {
+  let id = 1;
+  const transformed: Array<{
+    id: number;
+    institute: string;
+    startDate: string;
+    endDate: string;
+    designation: string;
+    worksDone: string[];
+  }> = [];
+
+  cvData.experience?.forEach((company) => {
+    company.roles?.forEach((role) => {
+      // Parse period to extract start and end dates
+      const periodParts = role.period?.split(" - ") || [];
+      const startDate = periodParts[0] || "";
+      const endDate = periodParts[1] || "Present";
+
+      transformed.push({
+        id: id++,
+        institute: company.company || "",
+        startDate: startDate,
+        endDate: endDate,
+        designation: role.position || "",
+        worksDone: role.responsibilities || [],
+      });
+    });
+  });
+
+  return transformed;
+};
+
+const experience = transformExperienceData();
 const education = [
   {
     institute: "Graduation",
@@ -588,22 +582,7 @@ export const About = () => {
         <Box
           sx={{ display: "flex", marginTop: "2rem", justifyContent: "center" }}
         >
-          <Link
-            sx={{
-              color: isDarkMode ? "white" : "black",
-              textDecoration: "none",
-            }}
-            href={resume}
-            target="_blank"
-          >
-            <Button
-              variant="contained"
-              sx={{ color: "white", marginBottom: "3rem" }}
-            >
-              Download Resume
-              <DownloadIcon sx={{ marginLeft: "0.5rem" }} />
-            </Button>
-          </Link>
+          <DownloadResumeButton isDarkMode={isDarkMode} />
         </Box>
       </Box>
     </Box>

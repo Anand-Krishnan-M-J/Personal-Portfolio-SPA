@@ -10,6 +10,7 @@ import { homeMessages } from "../../../messages/home";
 import { DarKModeContext } from "../../layout/layout";
 import { ProfileCard } from "../../profileCard";
 import { joinClass } from "../../../helpers/utils";
+import DownloadResumeButton from "../../resumeBuilder/DownloadResumeButton";
 
 import classes from "./home.module.scss";
 
@@ -103,6 +104,18 @@ export const Home = () => {
           >
             <GitHubIcon sx={{ fontSize: "2rem" }} />
           </Link>
+        </Box>
+        <Box
+          className={classes.intro__button__container}
+          sx={{
+            display: 'flex',
+            justifyContent: {
+              xs: 'center', // center on mobile
+              md: 'flex-start', // left on desktop
+            },
+          }}
+        >
+          <DownloadResumeButton isDarkMode={isDarkMode} />
         </Box>
       </div>
     </Box>

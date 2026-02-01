@@ -59,16 +59,16 @@
   "experience": [
     {
       "company": "OpenTable",
-      "companyPeriod": "Jan 2025 - Present (A Booking Holdings Company)",
+      "companyPeriod": "(Nasdaq: BKNG - A Booking Holdings Company)",
       "roles": [
         {
           "position": "Engineer II",
           "period": "Jan 2025 - Present",
           "responsibilities": [
-            "Spearheaded the 'Do-It-For-Me' (DIFM) Restaurant Profiles project, implementing AI-powered and manual profile creation workflows that earned a production bonus and 2026 roadmap priority.",
-            "Engineered complex UI and API integrations for restaurant management, utilizing feature flags and redirection logic to ensure non-disruptive production deployments.",
-            "Developed a high-impact 'Chrome' shared component for in-product support, widely adopted across multiple repositories to maintain UI consistency and enhance user assistance.",
-            "Contributed to the technical strategy and ideation of the 'Unlimited Google Covers' add-on, a strategic initiative designed to reduce customer churn and provide flat-rate value."
+            "Led Tier-1 configuration management application migration to React, creating reusable component architecture.",
+            "Spearheaded productionalization of a hackathon-winning management tool, securing a high-priority placement on the strategic product roadmap.",
+            "Optimized critical payment capture and onboarding flows, achieving high-reliability E2E coverage for global verification and processing.",
+            "Orchestrated cross-platform technical upgrades for Node/React and implemented self-serve internal tools for payment processor integrations to reduce manual overhead."
           ]
         }
       ]
