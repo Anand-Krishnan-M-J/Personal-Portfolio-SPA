@@ -1,0 +1,132 @@
+{
+  "personalInfo": {
+    "name": "Anand Krishnan M J",
+    "title": "Senior Web Engineer",
+    "experience": "5 years 2 months",
+    "location": "India",
+    "phone": "+91 7907614429",
+    "email": "anandkrishmj@gmail.com",
+    "linkedin": "linkedin.com/in/anandkrishnan",
+    "github": "github.com/anandkrishnan",
+    "website": "www.anandkris.com"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Senior Web Engineer with 5+ years of experience specializing in high-performance frontend architectures, full-stack AI integrations, and scalable e-commerce solutions using React and Node.js."
+  },
+  "technicalExpertise": [
+    "React.JS",
+    "TypeScript",
+    "Node.JS",
+    "Apollo GraphQL",
+    "Express.JS",
+    "JavaScript",
+    "CSS3",
+    "HTML5",
+    "Sass"
+  ],
+  "skills": [
+    "Redux",
+    "Redux Saga",
+    "Firebase",
+    "Docker",
+    "AWS",
+    "PostgreSQL",
+    "Websockets",
+    "Webpack",
+    "PWA",
+    "Material-UI",
+    "React Testing Library",
+    "Storybook",
+    "Jest",
+    "Google Analytics",
+    "Three.js",
+    "CI/CD - Jenkins",
+    "React Three Fiber"
+  ],
+  "methodology": [
+    "Agile methodology",
+    "Monorepos",
+    "REST",
+    "Microservice architecture"
+  ],
+  "tools": [
+    "Git",
+    "VS Code",
+    "Jira",
+    "Confluence"
+  ],
+  "experience": [
+    {
+      "company": "OpenTable",
+      "companyPeriod": "Jan 2025 - Present (A Booking Holdings Company)",
+      "roles": [
+        {
+          "position": "Engineer II",
+          "period": "Jan 2025 - Present",
+          "responsibilities": [
+            "Architected a reusable React component library for internal configuration management, accelerating UI migration and developer velocity across the organization.",
+            "Engineered a full-stack AI assistant for Booking Holdings using LLMs, enabling seamless natural language interactions within core platform user interfaces.",
+            "Spearheaded productionalization of a hackathon-winning restaurant management tool, securing a high-priority placement on the 2026 strategic product roadmap.",
+            "Optimized critical payment capture and onboarding flows, achieving high-reliability E2E coverage for global restaurant verification and processing.",
+            "Orchestrated cross-platform technical upgrades for Node/React and implemented self-serve internal tools for payment processor integrations to reduce manual overhead."
+          ]
+        }
+      ]
+    },
+    {
+      "company": "QBurst",
+      "companyPeriod": "Sep 2020 - Dec 2024",
+      "roles": [
+        {
+          "position": "Senior Software Engineer",
+          "period": "Jan 2024 - Dec 2024",
+          "responsibilities": [
+            "Led frontend development for Uniqlo's global e-commerce platform using React.JS and GraphQL, ensuring high performance for over 60M active users.",
+            "Optimized a complex BFF application via Node.js and Express, streamlining communication with 20+ microservices for enhanced system scalability.",
+            "Architected a robust country configuration system, enabling seamless global scaling and localization across multiple international regions and sub-brands.",
+            "Implemented Google Wallet with 3DS support across 26 countries, driving a 10% boost in conversion rates by streamlining payment checkout flows.",
+            "Utilized Firebase Remote Config for A/B testing on cart recommendations, significantly improving CTA engagement and successfully productionalizing winning variants."
+          ]
+        },
+        {
+          "position": "Software Engineer",
+          "period": "Sep 2020 - Dec 2023",
+          "responsibilities": [
+            "Built a high-performance PWA Email Newsletter Builder from scratch using React and PostgreSQL, empowering marketing teams with drag-and-drop template creation.",
+            "Developed a viral referral feature for Uniqlo US/Japan, contributing to a substantial customer base growth of 0.8 million users.",
+            "Engineered a React/GraphQL Proof of Concept to document API calls and error cases between SPA and microservices for improved clarity.",
+            "Mentored junior engineers on modern frontend practices and Uniqlo's platform architecture to ensure consistent knowledge sharing and onboarding."
+          ]
+        }
+      ]
+    }
+  ],
+  "openSource": {
+    "title": "Twenty",
+    "subtitle": "(YCombinator - S23)",
+    "contributions": [
+      "Engineered core CRM features for Twenty using NX, Recoil, and GraphQL to provide a modern open-source alternative to Salesforce.",
+      "Collaborated with core maintainers to identify and resolve performance bottlenecks within the Docker-orchestrated environment."
+    ]
+  },
+  "education": {
+    "degree": "Bachelors degree",
+    "period": "2016 - 2020",
+    "field": "Electronics & Communication Engineering",
+    "institution": "Government Engineering College",
+    "location": "Trivandrum",
+    "grade": "8.55 CGPA"
+  },
+  "projects": [
+    {
+      "name": "Wizard's Chess (PWA)",
+      "description": "A high-performance multiplayer 3D chess environment with real-time social features.",
+      "details": [
+        "Implemented immersive 3D rendering and game state management using React Three Fiber and Three.js.",
+        "Integrated peer-to-peer video communication using WebRTC and Firebase for real-time multiplayer engagement."
+      ]
+    }
+  ]
+}
+
