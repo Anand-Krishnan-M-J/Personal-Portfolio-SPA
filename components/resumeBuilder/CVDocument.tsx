@@ -634,21 +634,21 @@ const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
                 {hasSocialLinks && (
                   <View style={styles.socialLinksContainer}>
                     {hasData(personalInfo.linkedin) && (
-                      <Link src={`https://${personalInfo.linkedin}`}>
+                      <Link src={personalInfo.linkedin}>
                         <View style={styles.socialIcon}>
                           <LinkedInIcon size={10} color="#0077b5" />
                         </View>
                       </Link>
                     )}
                     {hasData(personalInfo.github) && (
-                      <Link src={`https://${personalInfo.github}`}>
+                      <Link src={personalInfo.github}>
                         <View style={styles.socialIcon}>
                           <GitHubIcon size={10} color="#333" />
                         </View>
                       </Link>
                     )}
                     {hasData(personalInfo.website) && (
-                      <Link src={`https://${personalInfo.website}`}>
+                      <Link src={personalInfo.website}>
                         <View style={styles.socialIcon}>
                           <WebsiteIcon size={10} color="#3498db" />
                         </View>
@@ -736,14 +736,7 @@ const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
             {/* Open Source Contributions */}
             {hasData(data?.openSource) && (
               <View style={styles.section}>
-                <View style={styles.sectionTitle}>
-                  <View style={styles.sectionIcon}>
-                    <StarIcon size={9} color="#2c3e50" />
-                  </View>
-                  <Text style={styles.sectionTitleText}>
-                    Open Source Contributions
-                  </Text>
-                </View>
+         
                 {hasData(data?.openSource?.title) && (
                   <Text style={styles.openSourceTitle}>
                     {data.openSource?.title}
