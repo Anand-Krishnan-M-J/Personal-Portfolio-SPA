@@ -898,16 +898,16 @@ const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
                 )}
                 {(hasData(data?.education?.location) ||
                   hasData(data?.education?.grade)) && (
-                    <Text style={styles.educationDetails}>
-                      {[
-                        data?.education?.location,
-                        data?.education?.grade &&
+                  <Text style={styles.educationDetails}>
+                    {[
+                      data?.education?.location,
+                      data?.education?.grade &&
                         `Grade: ${data.education?.grade}`,
-                      ]
-                        .filter(Boolean)
-                        .join(" | ")}
-                    </Text>
-                  )}
+                    ]
+                      .filter(Boolean)
+                      .join(" | ")}
+                  </Text>
+                )}
               </View>
             )}
 
