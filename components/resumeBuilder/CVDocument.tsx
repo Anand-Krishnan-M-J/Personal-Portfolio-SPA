@@ -634,21 +634,21 @@ const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
                 {hasSocialLinks && (
                   <View style={styles.socialLinksContainer}>
                     {hasData(personalInfo.linkedin) && (
-                      <Link src={`https://${personalInfo.linkedin}`}>
+                      <Link src={personalInfo.linkedin}>
                         <View style={styles.socialIcon}>
                           <LinkedInIcon size={10} color="#0077b5" />
                         </View>
                       </Link>
                     )}
                     {hasData(personalInfo.github) && (
-                      <Link src={`https://${personalInfo.github}`}>
+                      <Link src={personalInfo.github}>
                         <View style={styles.socialIcon}>
                           <GitHubIcon size={10} color="#333" />
                         </View>
                       </Link>
                     )}
                     {hasData(personalInfo.website) && (
-                      <Link src={`https://${personalInfo.website}`}>
+                      <Link src={personalInfo.website}>
                         <View style={styles.socialIcon}>
                           <WebsiteIcon size={10} color="#3498db" />
                         </View>
@@ -898,16 +898,16 @@ const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
                 )}
                 {(hasData(data?.education?.location) ||
                   hasData(data?.education?.grade)) && (
-                  <Text style={styles.educationDetails}>
-                    {[
-                      data?.education?.location,
-                      data?.education?.grade &&
+                    <Text style={styles.educationDetails}>
+                      {[
+                        data?.education?.location,
+                        data?.education?.grade &&
                         `Grade: ${data.education?.grade}`,
-                    ]
-                      .filter(Boolean)
-                      .join(" | ")}
-                  </Text>
-                )}
+                      ]
+                        .filter(Boolean)
+                        .join(" | ")}
+                    </Text>
+                  )}
               </View>
             )}
 

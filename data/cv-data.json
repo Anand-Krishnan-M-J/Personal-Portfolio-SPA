@@ -6,9 +6,9 @@
     "location": "India",
     "phone": "+91 7907614429",
     "email": "anandkrishmj@gmail.com",
-    "linkedin": "[linkedin.com/in/anandkrishnan](https://www.google.com/search?q=https://linkedin.com/in/anandkrishnan)",
-    "github": "[github.com/anandkrishnan](https://github.com/anandkrishnan)",
-    "website": "[https://www.anandkris.com/](https://www.anandkris.com/)"
+    "linkedin": "https://www.linkedin.com/in/anand-krishnan-mj/",
+    "github": "https://github.com/Anand-Krishnan-M-J",
+    "website": "https://www.anandkris.com/"
   },
   "about": {
     "title": "About Me",
@@ -65,10 +65,14 @@
           "position": "Engineer II",
           "period": "Jan 2025 - Present",
           "responsibilities": [
-            "Led Tier-1 configuration management application migration to React, creating reusable component architecture.",
-            "Spearheaded productionalization of a hackathon-winning management tool, securing a high-priority placement on the strategic product roadmap.",
-            "Optimized critical payment capture and onboarding flows, achieving high-reliability E2E coverage for global verification and processing.",
-            "Orchestrated cross-platform technical upgrades for Node/React and implemented self-serve internal tools for payment processor integrations to reduce manual overhead."
+            "Launched AI-assisted 'Do-It-For-Me' restaurant profiles, handling user testing, analytics tracking, and rollout to significantly reduce manual setup time.",
+            "Built the 'Restaurant Groups' homepage to help multi-location businesses easily view key metrics, onboard new locations, and manage their accounts.",
+            "Smoothed out the merchant onboarding experience by fixing complex routing, form validation, and error-handling issues, helping users adopt the product faster.",
+            "Increased system reliability and made feature launches safer by writing robust end-to-end (E2E) and integration tests for both core and AI features.",
+            "Developed interactive reporting dashboards and data filters, giving restaurants and internal teams better visibility into business performance.",
+            "Led the migration of a critical configuration management app to React, building a reusable component system without causing any system downtime.",
+            "Upgraded core payment capture and global onboarding flows, adding thorough E2E test coverage to ensure secure and reliable financial processing.",
+            "Managed Node.js and React upgrades across the platform and built internal self-serve tools for payment integrations, heavily reducing manual work for operations teams."
           ]
         }
       ]
