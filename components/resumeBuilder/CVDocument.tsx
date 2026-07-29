@@ -276,13 +276,15 @@ const styles = StyleSheet.create({
   responsibility: {
     fontSize: 8,
     color: "#333",
-    marginBottom: 4,
+    marginBottom: 10,
+    paddingBottom:1,
     paddingLeft: 7,
     textIndent: -7,
-    lineHeight: 1.55,
+    lineHeight: 1.15,
   },
   bullet: {
     marginRight: 3,
+    marginBottom:8
   },
 
   // Skills styles

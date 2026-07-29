@@ -65,14 +65,13 @@
           "position": "Engineer II",
           "period": "Jan 2025 - Present",
           "responsibilities": [
-            "Launched AI-assisted 'Do-It-For-Me' restaurant profiles, handling user testing, analytics tracking, and rollout to significantly reduce manual setup time.",
-            "Built the 'Restaurant Groups' homepage to help multi-location businesses easily view key metrics, onboard new locations, and manage their accounts.",
-            "Smoothed out the merchant onboarding experience by fixing complex routing, form validation, and error-handling issues, helping users adopt the product faster.",
-            "Increased system reliability and made feature launches safer by writing robust end-to-end (E2E) and integration tests for both core and AI features.",
-            "Developed interactive reporting dashboards and data filters, giving restaurants and internal teams better visibility into business performance.",
-            "Led the migration of a critical configuration management app to React, building a reusable component system without causing any system downtime.",
-            "Upgraded core payment capture and global onboarding flows, adding thorough E2E test coverage to ensure secure and reliable financial processing.",
-            "Managed Node.js and React upgrades across the platform and built internal self-serve tools for payment integrations, heavily reducing manual work for operations teams."
+            "Engineered AI-assisted onboarding, automating setup and significantly reducing merchant configuration time.",
+            "Architected a multi-location enterprise dashboard to streamline key metric tracking and account management.",
+            "Optimized onboarding conversion by resolving complex routing, state validation, and error-handling bottlenecks.",
+            "Elevated platform stability by building robust E2E and integration test suites for core and AI features.",
+            "Led zero-downtime React migration for a key configuration app, establishing a reusable component system.",
+            "Fortified financial processing by upgrading global payment flows and expanding E2E test coverage.",
+            "Modernized Node.js/React stacks and built self-serve payment tools, reducing manual operations overhead."
           ]
         }
       ]
@@ -85,21 +84,21 @@
           "position": "Senior Software Engineer",
           "period": "Jan 2024 - Dec 2024",
           "responsibilities": [
-            "Led frontend development for Uniqlo’s global e-commerce app using React.JS and GraphQL, ensuring high performance for over 60M active users.",
-            "Optimized a complex BFF application via Node.js and Express, streamlining communication with 20+ microservices for enhanced system scalability.",
-            "Architected a robust country configuration system, enabling seamless global scaling and localization across multiple international regions and sub-brands.",
-            "Implemented Google Wallet with 3DS support across 26 countries, driving a 10% boost in conversion rates by streamlining payment checkout flows.",
-            "Utilized Firebase Remote Config for A/B testing on cart recommendations, significantly improving CTA engagement and successfully productionalizing winning variants."
+            "Led frontend development for a global e-commerce app using React and GraphQL, serving 60M+ active users.",
+            "Optimized a Node.js/Express BFF layer, streamlining integration across 20+ microservices for higher scalability.",
+            "Architected a country configuration system, enabling rapid international localization and multi-brand expansion.",
+            "Integrated Google Wallet with 3DS across 26 countries, driving a 10% conversion lift in checkout flows.",
+            "Executed A/B testing on cart recommendations via Firebase, boosting CTA engagement and productizing top variants."
           ]
         },
         {
           "position": "Software Engineer",
           "period": "Sep 2020 - Dec 2023",
           "responsibilities": [
-            "Built a high-performance PWA Email Newsletter Builder from scratch using React and PostgreSQL, empowering marketing teams with drag-and-drop template creation.",
-            "Developed a viral referral feature for Uniqlo US/Japan, contributing to a substantial customer base growth of 0.8 million users.",
-            "Engineered a React/GraphQL Proof of Concept to document API calls and error cases between SPA and microservices for improved clarity.",
-            "Mentored junior engineers on modern frontend practices and Uniqlo's platform architecture to ensure consistent knowledge sharing and onboarding."
+            "Engineered a drag-and-drop PWA Email Builder from scratch with React and PostgreSQL for marketing teams.",
+            "Developed a viral referral feature that expanded the global user base by 800K+ customers across major markets.",
+            "Architected a React/GraphQL POC to standardize microservice API call mapping and error diagnostics.",
+            "Mentored junior engineers on frontend architecture and best practices to accelerate onboarding and team output."
           ]
         }
       ]
