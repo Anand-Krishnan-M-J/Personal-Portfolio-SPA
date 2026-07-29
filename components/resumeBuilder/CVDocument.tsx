@@ -277,14 +277,14 @@ const styles = StyleSheet.create({
     fontSize: 8,
     color: "#333",
     marginBottom: 10,
-    paddingBottom:1,
+    paddingBottom: 1,
     paddingLeft: 7,
     textIndent: -7,
     lineHeight: 1.15,
   },
   bullet: {
     marginRight: 3,
-    marginBottom:8
+    marginBottom: 8,
   },
 
   // Skills styles
