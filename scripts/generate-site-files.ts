@@ -8,58 +8,6 @@ const publicDirectory = resolve(process.cwd(), "public");
 const contentDirectory = resolve(process.cwd(), "content");
 const absoluteUrl = (publicPath: string) =>
   new URL(publicPath.replace(/^\/+/, ""), SITE_HOME_URL).toString();
-const shortcutFor = (section: "experience" | "work" | "contact") => {
-  const item = portfolioConfig.navigation.find(
-    (navigationItem) => navigationItem.section === section,
-  );
-  if (!item) throw new Error(`Missing ${section} navigation item.`);
-  return {
-    name: section === "work" ? portfolioConfig.project.name : item.label,
-    short_name: item.label,
-    url: `/${item.href}`,
-  };
-};
-
-const manifest = {
-  id: "/",
-  name: `${portfolioConfig.identity.displayName} — Software Engineering Portfolio`,
-  short_name: portfolioConfig.identity.displayName,
-  description: portfolioConfig.seo.description,
-  start_url: "/",
-  scope: "/",
-  display: "standalone",
-  display_override: ["window-controls-overlay", "standalone", "minimal-ui"],
-  background_color: "#f7f1e8",
-  theme_color: "#a77a50",
-  lang: portfolioConfig.seo.htmlLanguage,
-  dir: "ltr",
-  categories: ["portfolio", "business", "productivity"],
-  icons: [
-    {
-      src: "/brand-mark.svg",
-      sizes: "any",
-      type: "image/svg+xml",
-      purpose: "any",
-    },
-    {
-      src: "/android-chrome-192x192.png",
-      sizes: "192x192",
-      type: "image/png",
-      purpose: "any",
-    },
-    {
-      src: "/android-chrome-512x512.png",
-      sizes: "512x512",
-      type: "image/png",
-      purpose: "any",
-    },
-  ],
-  shortcuts: [
-    shortcutFor("experience"),
-    shortcutFor("work"),
-    shortcutFor("contact"),
-  ],
-};
 
 const escapeXml = (value: string) =>
   value.replace(
@@ -113,10 +61,6 @@ const siteMetadata = {
   title: portfolioConfig.seo.title,
 };
 
-writeFileSync(
-  resolve(publicDirectory, "site.webmanifest"),
-  `${JSON.stringify(manifest, null, 2)}\n`,
-);
 writeFileSync(resolve(publicDirectory, "sitemap.xml"), sitemap);
 writeFileSync(resolve(publicDirectory, "robots.txt"), robots);
 writeFileSync(
@@ -125,5 +69,5 @@ writeFileSync(
 );
 
 console.log(
-  "Generated metadata, manifest, sitemap, and robots.txt from portfolio config.",
+  "Generated metadata, sitemap, and robots.txt from portfolio config.",
 );

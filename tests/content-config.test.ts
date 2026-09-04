@@ -533,14 +533,10 @@ test("generated discovery files and production headers stay config aligned", asy
       "utf8",
     ),
   ) as Record<string, unknown>;
-  const manifest = JSON.parse(
-    readFileSync(path.join(publicRoot, "site.webmanifest"), "utf8"),
-  ) as Record<string, unknown>;
   const robots = readFileSync(path.join(publicRoot, "robots.txt"), "utf8");
   const sitemap = readFileSync(path.join(publicRoot, "sitemap.xml"), "utf8");
   assert.equal(generatedMetadata.description, portfolioConfig.seo.description);
   assert.equal(generatedMetadata.title, portfolioConfig.seo.title);
-  assert.equal(manifest.description, portfolioConfig.seo.description);
   assert.match(robots, /Sitemap: https:\/\/www\.anandkris\.com\/sitemap\.xml/);
   assert.match(sitemap, /<loc>https:\/\/www\.anandkris\.com\/<\/loc>/);
   assert.doesNotMatch(sitemap, /resume-builder/);

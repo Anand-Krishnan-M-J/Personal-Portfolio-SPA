@@ -126,13 +126,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             ))}
           </>
         )}
-        <link rel="manifest" href="/site.webmanifest" />
         <link rel="icon" href="/brand-mark.svg" type="image/svg+xml" />
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/apple-touch-icon.png"
-        />
         <link
           rel="icon"
           type="image/png"
@@ -145,9 +139,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           sizes="16x16"
           href="/favicon-16x16.png"
         />
-        <link rel="mask-icon" href="/brand-mark.svg" color="#a77a50" />
-        <meta name="msapplication-TileColor" content="#a77a50" />
-        <meta name="msapplication-TileImage" content="/mstile-150x150.png" />
         <meta name="color-scheme" content="light dark" />
         <meta id="portfolio-theme-color" name="theme-color" content="#fbfaf7" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />

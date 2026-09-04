@@ -95,7 +95,7 @@ npm run verify
 The individual commands are:
 
 - `npm run content:check` validates editable content and local asset references.
-- `npm run content:generate` refreshes lightweight metadata, the social preview image, manifest, sitemap, and robots file from the content config.
+- `npm run content:generate` refreshes lightweight metadata, the social preview image, sitemap, and robots file from the content config.
 - `npm run lint` runs Next.js, React, accessibility, and TypeScript ESLint rules with zero warnings allowed.
 - `npm run lint:fix` applies safe automatic lint fixes.
 - `npm run typecheck` runs TypeScript without emitting files.

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate raster favicon and install-icon fallbacks from the AK monogram."""
+"""Generate raster favicon fallbacks from the AK monogram."""
 
 from pathlib import Path
 
@@ -57,10 +57,6 @@ public_dir = Path(__file__).resolve().parents[1] / "public"
 png_targets = {
     "favicon-16x16.png": 16,
     "favicon-32x32.png": 32,
-    "apple-touch-icon.png": 180,
-    "android-chrome-192x192.png": 192,
-    "android-chrome-512x512.png": 512,
-    "mstile-150x150.png": 150,
 }
 
 for filename, size in png_targets.items():

@@ -20,7 +20,7 @@
     "bundle:check": "node scripts/check-bundle-budget.mjs",
     "smoke": "node scripts/smoke-standalone.mjs",
     "check": "npm run content:check && npm run lint && npm run typecheck && npm test && npm run format:check",
-    "verify": "npm run check && npm run build && npm run bundle:check && npm run smoke && git diff --exit-code -- content/site-metadata.generated.json public/og.png public/site.webmanifest public/sitemap.xml public/robots.txt",
+    "verify": "npm run check && npm run build && npm run bundle:check && npm run smoke && git diff --exit-code -- content/site-metadata.generated.json public/og.png public/sitemap.xml public/robots.txt",
     "prepare": "node scripts/setup-husky.mjs"
   },
   "lint-staged": {

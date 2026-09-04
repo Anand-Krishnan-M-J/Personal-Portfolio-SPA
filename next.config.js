@@ -20,7 +20,6 @@ const contentSecurityPolicy = [
   "frame-ancestors 'none'",
   "frame-src 'self' blob:",
   "img-src 'self' data: blob:",
-  "manifest-src 'self'",
   "object-src 'none'",
   `script-src 'self' 'unsafe-inline'${isDevelopment ? " 'unsafe-eval'" : ""}`,
   "style-src 'self' 'unsafe-inline'",
