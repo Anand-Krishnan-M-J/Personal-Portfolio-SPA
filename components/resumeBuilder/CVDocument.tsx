@@ -529,17 +529,8 @@ const CVDocument: React.FC<CVDocumentProps> = ({ data }) => {
       months += 12;
     }
 
-    // Format as "X years Y months"
-    const yearText = years === 1 ? "year" : "years";
-    const monthText = months === 1 ? "month" : "months";
-
-    if (years === 0) {
-      return `${months} ${monthText}`;
-    } else if (months === 0) {
-      return `${years} ${yearText}`;
-    } else {
-      return `${years} ${yearText} ${months} ${monthText}`;
-    }
+    const roundedYears = Math.max(0, Math.round(years + months / 12));
+    return `${roundedYears} ${roundedYears === 1 ? "year" : "years"}`;
   };
 
   // Guard against undefined data

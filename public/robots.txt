@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+# /resume-builder stays crawlable so its noindex meta and response header can be read.
+Disallow: /api/
+
+Sitemap: https://www.anandkris.com/sitemap.xml

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Anand Krishnan M J — Senior Software Engineer</title>
+  <desc id="description">Professional portfolio social card in warm ivory, light brown, and black.</desc>
+  <rect width="1200" height="630" fill="#f7f1e8"/>
+  <rect width="18" height="630" fill="#a77a50"/>
+  <path d="M74 151h1052M74 420h1052" stroke="#d8c4ae" stroke-width="2"/>
+
+  <g transform="translate(74 57)">
+    <rect x="1" y="1" width="70" height="70" rx="19" fill="#fffaf3" stroke="#a77a50" stroke-width="1.5"/>
+    <path d="m15 53 13-32.3L41 53M20.3 39.8h15.4" fill="none" stroke="#1b1917" stroke-width="4.2" stroke-linecap="square" stroke-linejoin="miter"/>
+    <path d="M42.6 21v32" fill="none" stroke="#1b1917" stroke-width="4.2" stroke-linecap="square"/>
+    <path d="m43.2 37.4 14.4-16.3M43.2 37.1 58 52.8" fill="none" stroke="#a77a50" stroke-width="4.2" stroke-linecap="square" stroke-linejoin="miter"/>
+  </g>
+
+  <text x="165" y="91" fill="#1b1917" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="28" font-weight="600" letter-spacing="1.2">ANAND KRISHNAN M J</text>
+  <text x="165" y="120" fill="#77573b" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="18" font-weight="500" letter-spacing="2.1">PORTFOLIO · ANANDKRIS.COM</text>
+
+  <text x="74" y="258" fill="#1b1917" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="76" font-weight="700" letter-spacing="-2.4">Senior Software</text>
+  <text x="74" y="356" fill="#1b1917" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="94" font-weight="700" letter-spacing="-2.8">Engineer</text>
+  <path d="M832 217h294" stroke="#a77a50" stroke-width="7"/>
+  <text x="833" y="257" fill="#77573b" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="1.3">PRODUCT ENGINEERING</text>
+  <text x="833" y="287" fill="#77573b" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="600" letter-spacing="1.3">AT GLOBAL SCALE</text>
+
+  <text x="75" y="469" fill="#77573b" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="25" font-weight="500">React · TypeScript · Node.js · GraphQL</text>
+  <text x="75" y="544" fill="#1b1917" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="0.8">OPENTABLE · BOOKING HOLDINGS · UNIQLO</text>
+
+  <rect x="875" y="493" width="251" height="72" rx="18" fill="#1b1917"/>
+  <text x="861" y="522" fill="#d1a87e" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="1.1">BACK-TO-BACK OPENTABLE</text>
+  <text x="899" y="548" fill="#fffaf3" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="17" font-weight="600" letter-spacing="1.1">HACKATHON PRIZES</text>
+</svg>

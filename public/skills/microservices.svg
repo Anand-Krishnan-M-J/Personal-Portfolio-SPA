@@ -1,0 +1,7 @@
+<svg fill="none" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <title>Microservices</title>
+  <rect height="5" rx="1.2" stroke="#6C4728" stroke-width="1.6" width="5" x="2.75" y="3"/>
+  <rect height="5" rx="1.2" stroke="#6C4728" stroke-width="1.6" width="5" x="16.25" y="3"/>
+  <rect height="5" rx="1.2" stroke="#6C4728" stroke-width="1.6" width="5" x="9.5" y="16"/>
+  <path d="M7.8 5.5h8.4M5.25 8v3.5h6.75M18.75 8v3.5H12M12 11.5V16" stroke="#6C4728" stroke-linecap="round" stroke-width="1.45"/>
+</svg>

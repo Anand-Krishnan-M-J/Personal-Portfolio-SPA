@@ -1,0 +1,885 @@
+{
+  "version": 1,
+  "identity": {
+    "fullName": "Anand Krishnan M J",
+    "displayName": "Anand Krishnan",
+    "initials": "AK",
+    "jobTitle": "Senior Software Engineer",
+    "location": "India",
+    "portrait": {
+      "src": "/images/profile.webp",
+      "alt": "Anand Krishnan smiling",
+      "width": 960,
+      "height": 960
+    }
+  },
+  "seo": {
+    "siteUrl": "https://www.anandkris.com",
+    "siteName": "Anand Krishnan",
+    "applicationName": "Anand Krishnan",
+    "title": "Anand Krishnan M J — Senior Software Engineer",
+    "description": "Anand Krishnan M J is a Senior Software Engineer building AI-assisted hospitality and global commerce products, with two OpenTable hackathon prizes.",
+    "givenName": "Anand",
+    "familyName": "Krishnan",
+    "htmlLanguage": "en-IN",
+    "openGraphLocale": "en_IN",
+    "ogCard": {
+      "taglineLines": ["PRODUCT ENGINEERING", "AT GLOBAL SCALE"],
+      "awardLines": ["BACK-TO-BACK OPENTABLE", "HACKATHON PRIZES"]
+    },
+    "socialImage": {
+      "src": "/og.png",
+      "alt": "Profile card for Anand Krishnan M J, Senior Software Engineer, highlighting OpenTable hackathon prizes in 2025 and 2026.",
+      "width": 1200,
+      "height": 630,
+      "mimeType": "image/png"
+    },
+    "knowsAboutExtra": [
+      "Frontend architecture",
+      "Web performance",
+      "E-commerce platforms",
+      "Hospitality technology",
+      "Restaurant SaaS",
+      "Global product engineering",
+      "Applied AI",
+      "AI-assisted product engineering"
+    ]
+  },
+  "navigation": [
+    {
+      "id": "experience",
+      "label": "Experience",
+      "section": "experience",
+      "href": "#experience"
+    },
+    {
+      "id": "selected-work",
+      "label": "Selected work",
+      "section": "work",
+      "href": "#work"
+    },
+    {
+      "id": "about",
+      "label": "About",
+      "section": "about",
+      "href": "#about"
+    },
+    {
+      "id": "skills",
+      "label": "Skills",
+      "section": "skills",
+      "href": "#skills"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "section": "contact",
+      "href": "#contact"
+    }
+  ],
+  "home": {
+    "header": {
+      "skipLink": "Skip to content",
+      "homeAriaLabel": "Anand Krishnan, home",
+      "primaryNavigationLabel": "Primary navigation",
+      "mobileNavigationLabel": "Mobile navigation"
+    },
+    "hero": {
+      "headlineLead": "I engineer digital products",
+      "headlineEmphasis": "built to scale.",
+      "intro": "I pair thoughtful product engineering with practical AI to turn complex work into products people trust. At OpenTable, a Booking Holdings company, I build hospitality software with a global remote team and have earned back-to-back hackathon prizes, including 1st place in 2026. Previously, I helped scale UNIQLO's B2C commerce for millions worldwide.",
+      "primaryActionLabel": "Explore my experience",
+      "portraitIndex": "AK / 01",
+      "profileLocationLabel": "Based in India",
+      "profileStatement": "Product-minded engineering, worldwide.",
+      "experienceBadgeSuffix": "building for the web",
+      "scrollCueLabel": "View experience",
+      "resumeAriaLabel": "Download Anand Krishnan's default resume as a PDF",
+      "resumeDefaultLabel": "Download CV ↗",
+      "resumePreparingCompactLabel": "Preparing CV…",
+      "resumePreparingLabel": "Preparing default CV…",
+      "resumeFailedLabel": "Resume unavailable — retry"
+    },
+    "impactAriaLabel": "Career impact highlights",
+    "mobile": {
+      "heroIntro": "I build reliable, AI-assisted products for global hospitality and commerce.",
+      "experienceHeading": "AI-assisted products at global scale.",
+      "experienceIntroSuffix": "building reliable products across hospitality and global commerce.",
+      "workIntro": "I turn unconventional ideas into polished browser experiments.",
+      "projectDescription": "Real-time 3D chess with multiplayer state and peer-to-peer video.",
+      "aboutBody": "I pair product judgment, reliable architecture, and thoughtful interaction—then mentor and ship.",
+      "skillsIntro": "A practical toolkit for designing, building, and operating reliable products.",
+      "contactIntro": "Open to ambitious product work and difficult engineering problems.",
+      "initiallyOpenSkillGroups": []
+    },
+    "experience": {
+      "label": "Experience · Primary focus",
+      "heading": "Engineering at product scale, with AI in the loop.",
+      "tenurePrefix": "For",
+      "tenureSuffix": "I've turned complex commerce and product constraints into reliable software that customers trust and teams can evolve.",
+      "timelineNowLabel": "NOW",
+      "caseLabel": "EXPERIENCE",
+      "tenureLabel": "Tenure",
+      "openSourceLabel": "Open source contribution",
+      "openSourceAffiliation": {
+        "name": "Y Combinator",
+        "cohort": "Summer 2023",
+        "logo": "y-combinator",
+        "sourceSubtitle": "(Y Combinator - S23)"
+      }
+    },
+    "work": {
+      "wordmark": "SELECTED WORK",
+      "label": "Personal work · Selected project",
+      "heading": "An experiment, thoughtfully engineered.",
+      "intro": "I enjoy exploring unconventional ideas, refining them into polished experiences, and learning through the process. Wizard's Chess grew from that curiosity.",
+      "projectLinkLabel": "Visit Wizard's Chess live project - opens in a new tab",
+      "projectNumber": "01 / 01",
+      "technologiesAriaLabel": "Technologies used",
+      "visitLabel": "Visit live project"
+    },
+    "about": {
+      "label": "About · How I work",
+      "heading": "Clear thinking. Reliable systems. Thoughtful details.",
+      "body": "My best work sits between informed product decisions, dependable architecture, and the interaction details people actually feel. I mentor engineers, contribute to open source, and stay close to the craft from first idea to shipped product."
+    },
+    "skills": {
+      "capabilitiesLabel": "Capabilities",
+      "heading": "From interface craft to production infrastructure.",
+      "intro": "The full toolkit behind the products I ship, organised by where each technology creates the most value."
+    },
+    "contact": {
+      "atmosphereWord": "HELLO",
+      "label": "Start a conversation",
+      "heading": "Let's build something enduring.",
+      "intro": "I'm always interested in ambitious product work, thoughtful engineering teams, and difficult problems worth solving well.",
+      "emailActionLabel": "Email me",
+      "availabilityAriaLabel": "Availability",
+      "availabilityStatus": "Available for the right conversation",
+      "availabilityStatement": "Product engineering with depth and momentum.",
+      "locationStatement": "Based in India · Collaborating worldwide",
+      "emailLabel": "Email",
+      "networkLabel": "Network",
+      "codeLabel": "Code"
+    },
+    "footer": {
+      "credit": "Designed and engineered by Anand Krishnan M J.",
+      "backToTopLabel": "Back to top ↑"
+    }
+  },
+  "metrics": [
+    {
+      "id": "active-users",
+      "value": "60M+",
+      "label": "active users served",
+      "context": "Global commerce scale"
+    },
+    {
+      "id": "countries",
+      "value": "26",
+      "label": "countries reached",
+      "context": "International payments"
+    },
+    {
+      "id": "conversion",
+      "value": "+10%",
+      "label": "checkout conversion",
+      "context": "Measurable conversion lift"
+    },
+    {
+      "id": "customers",
+      "value": "800K+",
+      "label": "customers added",
+      "context": "Referral-led customer growth"
+    }
+  ],
+  "employers": [
+    {
+      "id": "opentable",
+      "sourceCompany": "OpenTable",
+      "schemaRelationship": "current",
+      "parentOrganization": "Booking Holdings",
+      "metricIds": [],
+      "brand": {
+        "kind": "logo-pair",
+        "ariaLabel": "OpenTable, a Booking Holdings company",
+        "primaryLogo": {
+          "src": "/images/brands/opentable.svg",
+          "alt": "",
+          "width": 428,
+          "height": 95
+        },
+        "secondaryLogo": {
+          "src": "/images/brands/booking-holdings.svg",
+          "alt": "",
+          "width": 160,
+          "height": 39
+        }
+      },
+      "award": {
+        "eyebrow": "Back-to-back recognition",
+        "title": "Back-to-back OpenTable Hackathon Prizes",
+        "highlights": [
+          {
+            "label": "2026 · 1st prize",
+            "detail": "First among approximately 45 teams worldwide",
+            "schemaName": "2026 OpenTable Hackathon — 1st Prize (approximately 45 teams worldwide)",
+            "sourceResponsibility": "Won 1st prize in OpenTable's 2026 hackathon, placing first among approximately 45 teams worldwide."
+          },
+          {
+            "label": "2025 · 2nd prize",
+            "detail": "Production bonus · Released to production months later",
+            "schemaName": "2025 OpenTable Hackathon — 2nd Prize; selected for a production bonus",
+            "sourceResponsibility": "Earned 2nd prize in OpenTable's 2025 hackathon; the idea was selected for a production bonus and released to production a few months later."
+          }
+        ]
+      },
+      "domain": {
+        "kind": "hospitality-platform",
+        "eyebrow": "Hospitality · Global remote team",
+        "statement": "Building AI-assisted hospitality products with a global team for a platform serving more than 70,000 restaurants.",
+        "mobileStatement": "AI-assisted hospitality products for 70,000+ restaurants.",
+        "exposureLabel": "Product impact",
+        "marketLabel": "Restaurant market reach",
+        "exposure": [
+          "Hospitality",
+          "Serving 70,000+ restaurants",
+          "AI features for restaurants"
+        ],
+        "backgroundImage": {
+          "src": "/images/experience/hospitality-reservations.webp",
+          "alt": "Restaurant dining room with a digital table reservation plan in the foreground",
+          "width": 1920,
+          "height": 1081
+        },
+        "marketGroups": [
+          {
+            "id": "largest-market",
+            "label": "Largest market",
+            "items": [
+              {
+                "id": "united-states",
+                "label": "United States",
+                "detail": "OpenTable's largest and most mature market, especially New York, Chicago, Los Angeles, Miami, Boston, San Francisco, and Atlanta.",
+                "flags": [
+                  {
+                    "code": "US",
+                    "label": "United States",
+                    "emoji": "🇺🇸"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "established-markets",
+            "label": "Established markets",
+            "items": [
+              {
+                "id": "canada",
+                "label": "Canada",
+                "flags": [{ "code": "CA", "label": "Canada", "emoji": "🇨🇦" }]
+              },
+              {
+                "id": "united-kingdom-and-ireland",
+                "label": "United Kingdom & Ireland",
+                "flags": [
+                  {
+                    "code": "GB",
+                    "label": "United Kingdom",
+                    "emoji": "🇬🇧"
+                  },
+                  { "code": "IE", "label": "Ireland", "emoji": "🇮🇪" }
+                ]
+              },
+              {
+                "id": "australia",
+                "label": "Australia",
+                "flags": [{ "code": "AU", "label": "Australia", "emoji": "🇦🇺" }]
+              },
+              {
+                "id": "germany",
+                "label": "Germany",
+                "flags": [{ "code": "DE", "label": "Germany", "emoji": "🇩🇪" }]
+              },
+              {
+                "id": "mexico",
+                "label": "Mexico",
+                "flags": [{ "code": "MX", "label": "Mexico", "emoji": "🇲🇽" }]
+              },
+              {
+                "id": "france-and-italy",
+                "label": "France & Italy",
+                "flags": [
+                  { "code": "FR", "label": "France", "emoji": "🇫🇷" },
+                  { "code": "IT", "label": "Italy", "emoji": "🇮🇹" }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "growth-markets",
+            "label": "Other growth markets",
+            "items": [
+              {
+                "id": "spain",
+                "label": "Spain",
+                "flags": [{ "code": "ES", "label": "Spain", "emoji": "🇪🇸" }]
+              },
+              {
+                "id": "portugal",
+                "label": "Portugal",
+                "flags": [{ "code": "PT", "label": "Portugal", "emoji": "🇵🇹" }]
+              },
+              {
+                "id": "netherlands",
+                "label": "Netherlands",
+                "flags": [
+                  {
+                    "code": "NL",
+                    "label": "Netherlands",
+                    "emoji": "🇳🇱"
+                  }
+                ]
+              },
+              {
+                "id": "switzerland",
+                "label": "Switzerland",
+                "flags": [
+                  {
+                    "code": "CH",
+                    "label": "Switzerland",
+                    "emoji": "🇨🇭"
+                  }
+                ]
+              },
+              {
+                "id": "japan",
+                "label": "Japan",
+                "flags": [{ "code": "JP", "label": "Japan", "emoji": "🇯🇵" }]
+              },
+              {
+                "id": "united-arab-emirates",
+                "label": "United Arab Emirates",
+                "flags": [
+                  {
+                    "code": "AE",
+                    "label": "United Arab Emirates",
+                    "emoji": "🇦🇪"
+                  }
+                ]
+              },
+              {
+                "id": "latin-america-and-caribbean",
+                "label": "Broader LATAM & Caribbean",
+                "flags": [
+                  {
+                    "code": "LAC",
+                    "label": "Latin America and the Caribbean",
+                    "emoji": "🌎"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "qburst",
+      "sourceCompany": "QBurst",
+      "schemaRelationship": "former",
+      "metricIds": ["active-users", "countries", "conversion", "customers"],
+      "brand": {
+        "kind": "client-lockup",
+        "ariaLabel": "QBurst, client: UNIQLO",
+        "employerWordmark": "QBurst",
+        "qualifier": "Client",
+        "clientName": "UNIQLO",
+        "roleWatermarkPosition": "Senior Software Engineer",
+        "roleWatermarkPeriod": "Jan 2024 - Dec 2024",
+        "clientLogo": {
+          "src": "/images/brands/uniqlo.png",
+          "alt": "",
+          "width": 46,
+          "height": 46
+        }
+      },
+      "domain": {
+        "kind": "global-commerce",
+        "eyebrow": "Global B2C commerce · UNIQLO",
+        "statement": "Built B2C e-commerce experiences for UNIQLO, serving millions of customers worldwide.",
+        "mobileStatement": "B2C commerce for millions of customers worldwide.",
+        "exposureLabel": "Commerce impact",
+        "marketLabel": "UNIQLO global footprint",
+        "exposure": ["E-commerce", "Millions of customers worldwide", "B2C"],
+        "backgroundImage": {
+          "src": "/images/experience/global-fashion-commerce.webp",
+          "alt": "Global fashion commerce workspace with apparel, a mobile storefront, parcels, and a connected world map",
+          "width": 1920,
+          "height": 1081
+        },
+        "marketGroups": [
+          {
+            "id": "core-markets",
+            "label": "Core markets",
+            "items": [
+              {
+                "id": "japan",
+                "label": "Japan",
+                "detail": "The domestic home base and single largest revenue driver, with more than 800 retail stores.",
+                "flags": [{ "code": "JP", "label": "Japan", "emoji": "🇯🇵" }]
+              },
+              {
+                "id": "mainland-china",
+                "label": "Mainland China",
+                "detail": "The largest overseas market by a wide margin, serving as both a major retail network and manufacturing hub.",
+                "flags": [
+                  {
+                    "code": "CN",
+                    "label": "Mainland China",
+                    "emoji": "🇨🇳"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "international-expansion",
+            "label": "International expansion",
+            "items": [
+              {
+                "id": "north-america",
+                "label": "North America",
+                "detail": "Expanding beyond coastal metropolitan hubs into Middle America, including Texas, Florida, and western Canada.",
+                "flags": [
+                  {
+                    "code": "US",
+                    "label": "United States",
+                    "emoji": "🇺🇸"
+                  },
+                  { "code": "CA", "label": "Canada", "emoji": "🇨🇦" }
+                ]
+              },
+              {
+                "id": "europe",
+                "label": "Europe",
+                "detail": "Rapid expansion across the United Kingdom, France, and Germany, with recent openings in Rotterdam and Glasgow.",
+                "flags": [
+                  {
+                    "code": "GB",
+                    "label": "United Kingdom",
+                    "emoji": "🇬🇧"
+                  },
+                  { "code": "FR", "label": "France", "emoji": "🇫🇷" },
+                  { "code": "DE", "label": "Germany", "emoji": "🇩🇪" },
+                  {
+                    "code": "NL",
+                    "label": "Netherlands",
+                    "emoji": "🇳🇱"
+                  },
+                  {
+                    "code": "GB-SCT",
+                    "label": "Scotland",
+                    "emoji": "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc73\udb40\udc63\udb40\udc74\udb40\udc7f"
+                  }
+                ]
+              },
+              {
+                "id": "southeast-asia-and-oceania",
+                "label": "Southeast Asia & Oceania",
+                "detail": "A highly profitable region with deep market penetration across South Korea, Singapore, Malaysia, Thailand, the Philippines, Indonesia, and Australia.",
+                "flags": [
+                  {
+                    "code": "KR",
+                    "label": "South Korea",
+                    "emoji": "🇰🇷"
+                  },
+                  {
+                    "code": "SG",
+                    "label": "Singapore",
+                    "emoji": "🇸🇬"
+                  },
+                  { "code": "MY", "label": "Malaysia", "emoji": "🇲🇾" },
+                  { "code": "TH", "label": "Thailand", "emoji": "🇹🇭" },
+                  {
+                    "code": "PH",
+                    "label": "Philippines",
+                    "emoji": "🇵🇭"
+                  },
+                  { "code": "ID", "label": "Indonesia", "emoji": "🇮🇩" },
+                  { "code": "AU", "label": "Australia", "emoji": "🇦🇺" }
+                ]
+              },
+              {
+                "id": "india",
+                "label": "India",
+                "detail": "A major high-growth destination, expanding beyond northern India into warmer southern states with tropical-friendly linen and AIRism collections.",
+                "flags": [{ "code": "IN", "label": "India", "emoji": "🇮🇳" }]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "project": {
+    "id": "wizards-chess",
+    "resumeProjectName": "Wizard's Chess (PWA)",
+    "name": "Wizard's Chess",
+    "eyebrow": "Personal project · Real-time 3D",
+    "description": "A real-time 3D chess world with peer-to-peer video and synchronised multiplayer state. I built it to explore shared presence, playful interaction, and how far an unusual idea could go in the browser.",
+    "image": {
+      "src": "/images/chess.webp",
+      "alt": "Wizard-themed black chess pieces on a chessboard",
+      "width": 1280,
+      "height": 826
+    },
+    "tech": ["React Three Fiber", "Three.js", "WebRTC", "Firebase"],
+    "liveUrl": "https://www.chess.anandkris.com/",
+    "schema": {
+      "genre": "Interactive web experience"
+    }
+  },
+  "skills": {
+    "groups": [
+      {
+        "id": "frontend",
+        "label": "Frontend engineering",
+        "description": "Interfaces, state, design systems, and immersive web products."
+      },
+      {
+        "id": "backend",
+        "label": "Backend & data",
+        "description": "APIs, services, realtime systems, and dependable data flows."
+      },
+      {
+        "id": "platform",
+        "label": "Platform & architecture",
+        "description": "Cloud delivery, build systems, and architectures designed to evolve."
+      },
+      {
+        "id": "quality",
+        "label": "Quality & insight",
+        "description": "Testing, component confidence, and product measurement."
+      },
+      {
+        "id": "ai",
+        "label": "AI tools & integration",
+        "description": "AI-assisted development and production model integrations."
+      },
+      {
+        "id": "workflow",
+        "label": "Tools & ways of working",
+        "description": "The collaboration and delivery tools behind consistent execution."
+      }
+    ],
+    "items": [
+      {
+        "id": "react",
+        "source": "React.JS",
+        "groupId": "frontend",
+        "label": "React",
+        "icon": "/skills/mobile/react.svg"
+      },
+      {
+        "id": "next-js",
+        "source": "Next.js",
+        "groupId": "frontend",
+        "label": "Next.js",
+        "icon": "/skills/next.svg"
+      },
+      {
+        "id": "typescript",
+        "source": "TypeScript",
+        "groupId": "frontend",
+        "label": "TypeScript",
+        "icon": "/skills/mobile/ts.svg"
+      },
+      {
+        "id": "javascript",
+        "source": "JavaScript",
+        "groupId": "frontend",
+        "label": "JavaScript",
+        "icon": "/skills/mobile/js.svg"
+      },
+      {
+        "id": "html5",
+        "source": "HTML5",
+        "groupId": "frontend",
+        "label": "HTML5",
+        "icon": "/skills/html5.svg"
+      },
+      {
+        "id": "css",
+        "source": "CSS3",
+        "groupId": "frontend",
+        "label": "CSS",
+        "icon": "/skills/css.svg"
+      },
+      {
+        "id": "sass",
+        "source": "Sass",
+        "groupId": "frontend",
+        "label": "Sass",
+        "icon": "/skills/mobile/sass.svg"
+      },
+      {
+        "id": "redux",
+        "source": "Redux",
+        "groupId": "frontend",
+        "label": "Redux",
+        "icon": "/skills/mobile/redux.svg"
+      },
+      {
+        "id": "rtk-query",
+        "source": "RTK Query",
+        "groupId": "frontend",
+        "label": "RTK Query",
+        "icon": "/skills/mobile/redux.svg"
+      },
+      {
+        "id": "redux-saga",
+        "source": "Redux Saga",
+        "groupId": "frontend",
+        "label": "Redux Saga",
+        "icon": "/skills/redux-saga.svg"
+      },
+      {
+        "id": "material-ui",
+        "source": "Material-UI",
+        "groupId": "frontend",
+        "label": "Material UI",
+        "icon": "/skills/mui.svg"
+      },
+      {
+        "id": "pwa",
+        "source": "PWA",
+        "groupId": "frontend",
+        "label": "Progressive Web Apps",
+        "icon": "/skills/pwa.svg"
+      },
+      {
+        "id": "three-js",
+        "source": "Three.js",
+        "groupId": "frontend",
+        "label": "Three.js",
+        "icon": "/skills/three.svg"
+      },
+      {
+        "id": "react-three-fiber",
+        "source": "React Three Fiber",
+        "groupId": "frontend",
+        "label": "React Three Fiber",
+        "icon": "/skills/three.svg"
+      },
+      {
+        "id": "node-js",
+        "source": "Node.JS",
+        "groupId": "backend",
+        "label": "Node.js",
+        "icon": "/skills/node.svg"
+      },
+      {
+        "id": "express-js",
+        "source": "Express.JS",
+        "groupId": "backend",
+        "label": "Express.js",
+        "icon": "/skills/express.svg"
+      },
+      {
+        "id": "graphql-apollo",
+        "source": "Apollo GraphQL",
+        "groupId": "backend",
+        "label": "GraphQL / Apollo",
+        "icon": "/skills/mobile/graphql.png"
+      },
+      {
+        "id": "postgresql",
+        "source": "PostgreSQL",
+        "groupId": "backend",
+        "label": "PostgreSQL",
+        "icon": "/skills/pg.svg"
+      },
+      {
+        "id": "firebase",
+        "source": "Firebase",
+        "groupId": "backend",
+        "label": "Firebase",
+        "icon": "/skills/Firebase.svg"
+      },
+      {
+        "id": "websockets",
+        "source": "Websockets",
+        "groupId": "backend",
+        "label": "WebSockets",
+        "icon": "/skills/websockets.svg"
+      },
+      {
+        "id": "rest",
+        "source": "REST",
+        "groupId": "backend",
+        "label": "REST APIs",
+        "icon": "/skills/rest-api.svg"
+      },
+      {
+        "id": "aws",
+        "source": "AWS",
+        "groupId": "platform",
+        "label": "AWS",
+        "icon": "/skills/mobile/aws.svg"
+      },
+      {
+        "id": "docker",
+        "source": "Docker",
+        "groupId": "platform",
+        "label": "Docker",
+        "icon": "/skills/mobile/docker.svg"
+      },
+      {
+        "id": "webpack",
+        "source": "Webpack",
+        "groupId": "platform",
+        "label": "Webpack",
+        "icon": "/skills/mobile/webpack.svg"
+      },
+      {
+        "id": "jenkins",
+        "source": "CI/CD - Jenkins",
+        "groupId": "platform",
+        "label": "Jenkins / CI·CD",
+        "icon": "/skills/jenkins.svg"
+      },
+      {
+        "id": "teamcity",
+        "source": "TeamCity",
+        "groupId": "platform",
+        "label": "TeamCity",
+        "icon": "/skills/teamcity.svg"
+      },
+      {
+        "id": "monorepos",
+        "source": "Monorepos",
+        "groupId": "platform",
+        "label": "Monorepos",
+        "icon": "/skills/monorepo.svg"
+      },
+      {
+        "id": "microservices",
+        "source": "Microservice architecture",
+        "groupId": "platform",
+        "label": "Microservices",
+        "icon": "/skills/microservices.svg"
+      },
+      {
+        "id": "react-testing-library",
+        "source": "React Testing Library",
+        "groupId": "quality",
+        "label": "React Testing Library",
+        "icon": "/skills/mobile/rtl.png"
+      },
+      {
+        "id": "jest",
+        "source": "Jest",
+        "groupId": "quality",
+        "label": "Jest",
+        "icon": "/skills/mobile/jest.svg"
+      },
+      {
+        "id": "storybook",
+        "source": "Storybook",
+        "groupId": "quality",
+        "label": "Storybook",
+        "icon": "/skills/mobile/storybook.svg"
+      },
+      {
+        "id": "google-analytics",
+        "source": "Google Analytics",
+        "groupId": "quality",
+        "label": "Google Analytics",
+        "icon": "/skills/GAnalytics.png"
+      },
+      {
+        "id": "mixpanel",
+        "source": "Mixpanel",
+        "groupId": "quality",
+        "label": "Mixpanel",
+        "icon": "/skills/mixpanel.svg"
+      },
+      {
+        "id": "cursor",
+        "source": "Cursor",
+        "groupId": "ai",
+        "label": "Cursor",
+        "icon": "/skills/cursor.svg"
+      },
+      {
+        "id": "codex",
+        "source": "Codex",
+        "groupId": "ai",
+        "label": "Codex",
+        "icon": "/skills/openai.svg"
+      },
+      {
+        "id": "claude",
+        "source": "Claude",
+        "groupId": "ai",
+        "label": "Claude",
+        "icon": "/skills/claude.svg"
+      },
+      {
+        "id": "gemini-flash",
+        "source": "Gemini 3.6 Flash",
+        "groupId": "ai",
+        "label": "Gemini 3.6 Flash",
+        "icon": "/skills/gemini.svg"
+      },
+      {
+        "id": "openai",
+        "source": "OpenAI",
+        "groupId": "ai",
+        "label": "OpenAI",
+        "icon": "/skills/openai.svg"
+      },
+      {
+        "id": "git",
+        "source": "Git",
+        "groupId": "workflow",
+        "label": "Git",
+        "icon": "/skills/git.png"
+      },
+      {
+        "id": "vs-code",
+        "source": "VS Code",
+        "groupId": "workflow",
+        "label": "VS Code",
+        "icon": "/skills/vscode.svg"
+      },
+      {
+        "id": "jira",
+        "source": "Jira",
+        "groupId": "workflow",
+        "label": "Jira",
+        "icon": "/skills/jira.png"
+      },
+      {
+        "id": "confluence",
+        "source": "Confluence",
+        "groupId": "workflow",
+        "label": "Confluence",
+        "icon": "/skills/confluence.png"
+      },
+      {
+        "id": "agile",
+        "source": "Agile methodology",
+        "groupId": "workflow",
+        "label": "Agile delivery",
+        "icon": "/skills/agile.svg"
+      }
+    ]
+  },
+  "resumeDownloads": {
+    "defaultFileName": "Anand_Krishnan_CV.pdf",
+    "studioExportFileName": "Anand_Krishnan_Resume_Studio.json"
+  }
+}

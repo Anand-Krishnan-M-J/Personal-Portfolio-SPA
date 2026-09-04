@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>AK — Anand Krishnan</title>
+  <style>
+    .surface { fill: #f7f1e8; }
+    .ink { stroke: #1b1917; }
+    .accent { stroke: #a77a50; }
+    @media (prefers-color-scheme: dark) {
+      .surface { fill: #15120f; }
+      .ink { stroke: #fffaf3; }
+      .accent { stroke: #d1a87e; }
+    }
+  </style>
+  <rect class="surface accent" x="2" y="2" width="60" height="60" rx="17" stroke-width="1.5"/>
+  <path class="ink" d="M13.75 45.5 24.9 17.8 36.05 45.5M18.3 34.15h13.2" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path class="ink" d="M37.45 18v27.5" stroke-width="3.6" stroke-linecap="square"/>
+  <path class="accent" d="m38 32.15 12.35-14.1M38 31.9l12.7 13.55" stroke-width="3.6" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>
