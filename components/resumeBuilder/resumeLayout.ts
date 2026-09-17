@@ -194,6 +194,13 @@ export const createPortfolioDownloadCustomization = (): ResumeCustomization => {
 
   return {
     ...customization,
+    appearance: {
+      ...customization.appearance,
+      fontScale: 0.95,
+      lineSpacing: 1.08,
+      pageMargin: 1.08,
+      spacingScale: 1.04,
+    },
     sections: portfolioDownloadSectionLayout.map(({ id, placement }) => ({
       ...settingById.get(id)!,
       placement,

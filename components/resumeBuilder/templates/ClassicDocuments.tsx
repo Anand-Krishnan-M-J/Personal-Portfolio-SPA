@@ -27,9 +27,9 @@ const originalAdaptive: TemplateSpec = {
 
 const portfolioDownload: TemplateSpec = {
   ...originalAdaptive,
-  baseFontSize: 8.75,
-  pagePadding: 25,
-  spacingBias: 1.16,
+  baseFontSize: 8.4,
+  pagePadding: 30,
+  spacingBias: 1.22,
 };
 
 const classicAiry: TemplateSpec = {
