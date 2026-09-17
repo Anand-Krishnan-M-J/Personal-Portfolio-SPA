@@ -605,7 +605,7 @@ const makeStyles = (
     summary: {
       color: spec.ink,
       fontSize: baseSize,
-      lineHeight: textLineHeight(1.32, 1.44),
+      lineHeight: textLineHeight(1.42, 1.54),
     },
     experienceItem: {
       backgroundColor: spec.companyCards ? spec.card : "transparent",
@@ -622,6 +622,7 @@ const makeStyles = (
         : spec.companyCards
           ? space(spec.dense ? 6 : 8)
           : 0,
+      paddingRight: space(spec.dense ? 2 : 3),
     },
     companyRow: {
       alignItems: "flex-start",
@@ -634,14 +635,7 @@ const makeStyles = (
       fontFamily: spec.headingFont,
       fontSize: clamp(baseSize * 1.3, 8.8, 11.5),
       lineHeight: 1.15,
-      width: "58%",
-    },
-    companyPeriod: {
-      color: spec.muted,
-      fontSize: clamp(baseSize * 0.82, 6.3, 7.8),
-      lineHeight: 1.2,
-      textAlign: "right",
-      width: "40%",
+      width: "100%",
     },
     roleItem: {
       flexShrink: 0,
@@ -668,13 +662,28 @@ const makeStyles = (
       textAlign: "right",
       width: "40%",
     },
-    bullet: {
+    alignedBulletRow: {
+      alignItems: "flex-start",
+      flexDirection: "row",
+      marginBottom: space(spec.dense ? 1.6 : 2.7),
+    },
+    alignedBulletMarker: {
+      flexShrink: 0,
+      width: space(spec.dense ? 6 : 8),
+    },
+    alignedBulletMarkerText: {
       color: spec.ink,
       fontSize: baseSize,
-      lineHeight: textLineHeight(1.26, 1.34),
-      marginBottom: space(spec.dense ? 1.6 : 2.7),
-      paddingLeft: space(spec.dense ? 6 : 8),
-      textIndent: -space(spec.dense ? 6 : 8),
+      lineHeight: textLineHeight(1.34, 1.44),
+    },
+    alignedBulletTextColumn: {
+      flexGrow: 1,
+      flexShrink: 1,
+    },
+    alignedBulletText: {
+      color: spec.ink,
+      fontSize: baseSize,
+      lineHeight: textLineHeight(1.34, 1.44),
     },
     pills: {
       columnGap: space(spec.dense ? 2.5 : 4),
@@ -735,6 +744,40 @@ const makeStyles = (
       fontSize: clamp(baseSize * 0.86, 6.3, 8),
       lineHeight: textLineHeight(1.25, 1.34),
       marginBottom: space(spec.dense ? 2 : 3),
+    },
+    openSourceTitle: {
+      color: spec.ink,
+      fontFamily: spec.headingFont,
+      fontSize: clamp(baseSize * 1.05, 7.4, 9),
+      lineHeight: textLineHeight(2.18, 3.28),
+      marginBottom: space(spec.dense ? 3 : 4),
+    },
+    openSourceContent: {
+      paddingRight: space(spec.dense ? 2.5 : 5),
+    },
+    openSourceBulletRow: {
+      alignItems: "flex-start",
+      flexDirection: "row",
+      marginBottom: space(spec.dense ? 2 : 4),
+    },
+    openSourceBulletMarker: {
+      flexShrink: 0,
+      width: space(spec.dense ? 7 : 9),
+    },
+    openSourceBulletMarkerText: {
+      color: spec.accent,
+      fontFamily: spec.headingFont,
+      fontSize: baseSize,
+      lineHeight: textLineHeight(3.5, 5),
+    },
+    openSourceBulletTextColumn: {
+      flexGrow: 1,
+      flexShrink: 1,
+    },
+    openSourceBulletText: {
+      color: spec.ink,
+      fontSize: baseSize,
+      lineHeight: textLineHeight(3, 4.5),
     },
     footer: {
       bottom: Math.max(9, pagePadding * 0.4),
@@ -929,12 +972,6 @@ const Experience = (props: RenderProps & { index: number }) => {
             >
               {company.company}
             </Text>
-            <Text
-              hyphenationCallback={preserveWholeWords}
-              style={styles.companyPeriod}
-            >
-              {company.companyPeriod}
-            </Text>
           </View>
           {company.roles?.map((role, roleIndex) => (
             <View key={`${role.position}-${roleIndex}`} style={styles.roleItem}>
@@ -955,15 +992,26 @@ const Experience = (props: RenderProps & { index: number }) => {
               {role.responsibilities
                 ?.filter(hasText)
                 .map((responsibility, responsibilityIndex) => (
-                  <Text
-                    hyphenationCallback={preserveWholeWords}
+                  <View
                     key={`${responsibilityIndex}-${responsibility.slice(0, 12)}`}
-                    orphans={2}
-                    style={styles.bullet}
-                    widows={2}
+                    style={styles.alignedBulletRow}
                   >
-                    {spec.plain ? "-" : "•"} {responsibility}
-                  </Text>
+                    <View style={styles.alignedBulletMarker}>
+                      <Text style={styles.alignedBulletMarkerText}>
+                        {spec.plain ? "-" : "•"}
+                      </Text>
+                    </View>
+                    <View style={styles.alignedBulletTextColumn}>
+                      <Text
+                        hyphenationCallback={preserveWholeWords}
+                        orphans={2}
+                        style={styles.alignedBulletText}
+                        widows={2}
+                      >
+                        {responsibility}
+                      </Text>
+                    </View>
+                  </View>
                 ))}
             </View>
           ))}
@@ -1096,24 +1144,39 @@ const OpenSource = (props: RenderProps & { index: number }) => {
 
   return (
     <Section {...props} id="openSource">
-      {(hasText(openSource.title) || hasText(openSource.subtitle)) && (
-        <View minPresenceAhead={30}>
-          <Text style={props.styles.projectTitle}>
-            {[openSource.title, openSource.subtitle].filter(hasText).join(" ")}
-          </Text>
-        </View>
-      )}
-      {openSource.contributions?.filter(hasText).map((item, itemIndex) => (
-        <Text
-          hyphenationCallback={preserveWholeWords}
-          key={`${itemIndex}-${item.slice(0, 12)}`}
-          orphans={2}
-          style={props.styles.bullet}
-          widows={2}
-        >
-          {props.spec.plain ? "-" : "•"} {item}
-        </Text>
-      ))}
+      <View style={props.styles.openSourceContent}>
+        {(hasText(openSource.title) || hasText(openSource.subtitle)) && (
+          <View minPresenceAhead={30}>
+            <Text style={props.styles.openSourceTitle}>
+              {[openSource.title, openSource.subtitle]
+                .filter(hasText)
+                .join(" ")}
+            </Text>
+          </View>
+        )}
+        {openSource.contributions?.filter(hasText).map((item, itemIndex) => (
+          <View
+            key={`${itemIndex}-${item.slice(0, 12)}`}
+            style={props.styles.openSourceBulletRow}
+          >
+            <View style={props.styles.openSourceBulletMarker}>
+              <Text style={props.styles.openSourceBulletMarkerText}>
+                {props.spec.plain ? "-" : "•"}
+              </Text>
+            </View>
+            <View style={props.styles.openSourceBulletTextColumn}>
+              <Text
+                hyphenationCallback={preserveWholeWords}
+                orphans={2}
+                style={props.styles.openSourceBulletText}
+                widows={2}
+              >
+                {item}
+              </Text>
+            </View>
+          </View>
+        ))}
+      </View>
     </Section>
   );
 };
@@ -1150,15 +1213,26 @@ const Projects = (props: RenderProps & { index: number }) => {
             )}
           </View>
           {project.details?.filter(hasText).map((detail, detailIndex) => (
-            <Text
-              hyphenationCallback={preserveWholeWords}
+            <View
               key={`${detailIndex}-${detail.slice(0, 12)}`}
-              orphans={2}
-              style={props.styles.bullet}
-              widows={2}
+              style={props.styles.alignedBulletRow}
             >
-              {props.spec.plain ? "-" : "•"} {detail}
-            </Text>
+              <View style={props.styles.alignedBulletMarker}>
+                <Text style={props.styles.alignedBulletMarkerText}>
+                  {props.spec.plain ? "-" : "•"}
+                </Text>
+              </View>
+              <View style={props.styles.alignedBulletTextColumn}>
+                <Text
+                  hyphenationCallback={preserveWholeWords}
+                  orphans={2}
+                  style={props.styles.alignedBulletText}
+                  widows={2}
+                >
+                  {detail}
+                </Text>
+              </View>
+            </View>
           ))}
         </View>
       ))}

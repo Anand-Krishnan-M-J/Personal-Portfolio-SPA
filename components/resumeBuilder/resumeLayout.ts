@@ -197,7 +197,7 @@ export const createPortfolioDownloadCustomization = (): ResumeCustomization => {
     appearance: {
       ...customization.appearance,
       fontScale: 0.95,
-      lineSpacing: 1.08,
+      lineSpacing: 1.10,
       pageMargin: 1.08,
       spacingScale: 1.04,
     },

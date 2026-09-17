@@ -38,9 +38,9 @@
     "Webpack",
     "PWA",
     "Material-UI",
+    "Jest",
     "React Testing Library",
     "Storybook",
-    "Jest",
     "Google Analytics",
     "Mixpanel",
     "Three.js",
@@ -97,8 +97,7 @@
             "Led frontend development for UNIQLO's global commerce platform with React and GraphQL, serving 60M+ active users across Japan, the US, European markets, and select Asian markets.",
             "Improved a Node.js/Express BFF that connected more than 20 microservices.",
             "Built country configuration tooling for localization and multi-brand expansion.",
-            "Integrated Google Wallet with 3DS in 26 countries, increasing checkout conversion by 10%.",
-            "Ran Firebase experiments on cart recommendations and shipped the strongest variants."
+            "Integrated Google Wallet with 3DS in 26 countries, increasing checkout conversion by 10%."
           ]
         },
         {
@@ -107,7 +106,6 @@
           "responsibilities": [
             "Built a drag-and-drop PWA email builder with React and PostgreSQL.",
             "Developed a UNIQLO referral feature that contributed to 800K+ customer growth in the US and Japan.",
-            "Created a React/GraphQL proof of concept for mapping API calls and diagnosing errors.",
             "Mentored junior engineers in frontend architecture and platform practices."
           ]
         }
@@ -118,8 +116,7 @@
     "title": "Twenty",
     "subtitle": "(Y Combinator - S23)",
     "contributions": [
-      "Engineered core CRM features for Twenty using NX, Recoil, and GraphQL to provide a modern open-source alternative to Salesforce.",
-      "Collaborated with core maintainers to identify and resolve performance bottlenecks within the Docker-orchestrated environment."
+      "Engineered core CRM features for Twenty using NX, Recoil, and GraphQL to provide a modern open-source alternative to Salesforce."
     ]
   },
   "education": {
